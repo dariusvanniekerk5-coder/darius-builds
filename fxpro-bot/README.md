@@ -78,6 +78,33 @@ Press **Ctrl-C** to stop; it prints a scorecard and writes `trades.csv`.
 4. Size the position so the stop-loss costs a fixed % of equity (default 0.5%).
 5. Place the order (or just log it in `--dry-run`) and journal everything.
 
+## Backtesting (validate before you trust it)
+
+Before letting a strategy trade even the demo account, replay it over historical
+data. The backtester runs the **same** strategy, risk, and scorecard code as the
+live bot:
+
+```bash
+# Quick smoke test on reproducible random-walk data (no data file needed):
+python -m src.backtest --synthetic 5000
+
+# On your own historical CSV (columns: time,open,high,low,close):
+python -m src.backtest --csv path/to/EURUSD_M15.csv
+
+# Pull history straight from a running MT5 terminal (Windows):
+python -m src.backtest --from-mt5 --bars 20000
+```
+
+It writes `backtest_trades.csv` and `backtest_equity.csv` and prints the scorecard
+plus total return.
+
+**It is built to *not* lie to you:** no lookahead on signals or fills (entries fill
+at the next bar's open), pessimistic intrabar exits (if a bar touches both stop and
+target, the stop is assumed first), and modeled spread + commission costs. Even so —
+**a good backtest is necessary, not sufficient.** The `--synthetic` mode proves the
+point: a random walk has no edge, yet a given seed can still show a "profit" purely
+by luck. Past performance does not predict the future.
+
 ## The scorecard
 
 Every trade lands in `journal.sqlite` and `trades.csv`. Metrics computed:
@@ -97,9 +124,12 @@ pytest -q
 
 - Edit `config.yaml` to change the symbol, timeframe, EMA/ATR params, and — most
   importantly — the risk limits.
-- **Recommended next step:** add a backtester so a strategy can be validated on
-  historical data *before* it's trusted on the demo account. (Out of scope for this
-  first build.)
+- **Workflow:** tune params → **backtest** (`python -m src.backtest`) → if it holds
+  up, run `--dry-run` live → then demo-trade. Re-backtest whenever you change the
+  strategy.
+- Watch out for over-fitting: if you tweak parameters until the backtest looks
+  great, you've probably just memorised the past. Prefer params that work across
+  many periods/instruments over ones that are perfect on one.
 
 ## Layout
 
@@ -112,7 +142,9 @@ src/
   strategy.py     EMA-crossover strategy (Strategy interface)
   risk.py         position sizing + daily-loss kill switch + exposure limits
   execution.py    order_send wrappers (open/close, P/L reconciliation)
-  journal.py      SQLite + CSV trade log and metrics
+  journal.py      SQLite + CSV trade log and metrics (compute_metrics shared)
+  timeframes.py   pure timeframe metadata (resample freq + bar duration)
+  backtest.py     historical replay using the same strategy/risk/scorecard code
   bot.py          main loop
-tests/            unit tests for strategy, risk, journal
+tests/            unit tests for strategy, risk, journal, backtest
 ```

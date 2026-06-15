@@ -126,26 +126,7 @@ class Journal:
         return [float(r["profit"]) for r in rows]
 
     def metrics(self) -> Metrics:
-        profits = self.closed_profits()
-        m = Metrics(closed_trades=len(profits))
-        if not profits:
-            return m
-
-        wins = [p for p in profits if p > 0]
-        losses = [p for p in profits if p < 0]
-        m.wins = len(wins)
-        m.losses = len(losses)
-        m.win_rate = m.wins / m.closed_trades
-        m.gross_profit = sum(wins)
-        m.gross_loss = sum(losses)
-        m.net_profit = sum(profits)
-        m.expectancy = m.net_profit / m.closed_trades
-        m.profit_factor = (
-            m.gross_profit / abs(m.gross_loss) if m.gross_loss != 0
-            else float("inf") if m.gross_profit > 0 else 0.0
-        )
-        m.max_drawdown = _max_drawdown(profits)
-        return m
+        return compute_metrics(self.closed_profits())
 
     def export_csv(self) -> None:
         rows = self.conn.execute(
@@ -158,6 +139,33 @@ class Journal:
             writer.writerow(rows[0].keys())
             for r in rows:
                 writer.writerow([r[k] for k in r.keys()])
+
+
+def compute_metrics(profits: list[float]) -> Metrics:
+    """Compute the scorecard from a list of realized per-trade P/L values.
+
+    Shared by the live journal and the backtester so both report identical
+    metrics from the exact same formulas.
+    """
+    m = Metrics(closed_trades=len(profits))
+    if not profits:
+        return m
+
+    wins = [p for p in profits if p > 0]
+    losses = [p for p in profits if p < 0]
+    m.wins = len(wins)
+    m.losses = len(losses)
+    m.win_rate = m.wins / m.closed_trades
+    m.gross_profit = sum(wins)
+    m.gross_loss = sum(losses)
+    m.net_profit = sum(profits)
+    m.expectancy = m.net_profit / m.closed_trades
+    m.profit_factor = (
+        m.gross_profit / abs(m.gross_loss) if m.gross_loss != 0
+        else float("inf") if m.gross_profit > 0 else 0.0
+    )
+    m.max_drawdown = _max_drawdown(profits)
+    return m
 
 
 def _max_drawdown(profits: list[float]) -> float:

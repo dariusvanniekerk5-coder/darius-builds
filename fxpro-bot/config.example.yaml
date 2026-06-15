@@ -29,3 +29,13 @@ risk:
 journal:
   db_path: "journal.sqlite"
   csv_path: "trades.csv"
+
+# --- Backtest (only used by `python -m src.backtest`) ---
+backtest:
+  initial_balance: 10000      # starting equity for the simulation
+  # Currency conversion for P/L. Defaults suit EURUSD: one 0.00001 move is ~$1
+  # per 1.0 lot. Adjust per instrument (see MT5 symbol_info tick_size/tick_value).
+  tick_size: 0.00001
+  tick_value: 1.0
+  spread: 0.00010             # ~1 pip, charged once per round-trip trade
+  commission_per_lot: 0.0     # account currency per lot, round trip
