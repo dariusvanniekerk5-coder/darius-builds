@@ -1,0 +1,10 @@
+# Core runtime deps. MetaTrader5 is Windows-only in practice and is the only
+# package needed on the trading PC; the rest are used everywhere (incl. tests).
+MetaTrader5>=5.0.45 ; platform_system == "Windows"
+pandas>=2.0
+numpy>=1.24
+PyYAML>=6.0
+python-dotenv>=1.0
+
+# Dev / test only
+pytest>=7.0
