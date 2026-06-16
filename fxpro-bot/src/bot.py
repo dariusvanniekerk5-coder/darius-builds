@@ -15,6 +15,7 @@ from datetime import datetime, timezone
 
 from . import connection, data, execution, journal, risk, strategy
 from .config import load_config, load_credentials
+from .news import overlay as news_overlay
 from .strategy import Direction
 
 
@@ -45,6 +46,9 @@ def run(config_path: str, dry_run: bool) -> None:
     risk_cfg = risk.from_config(cfg)
     risk_mgr = risk.RiskManager(risk_cfg)
 
+    news_cfg = news_overlay.news_config_from(cfg)
+    news_provider = news_overlay.build_provider(news_cfg)
+
     jcfg = cfg.get("journal", {})
     j = journal.Journal(jcfg.get("db_path", "journal.sqlite"),
                         jcfg.get("csv_path", "trades.csv"))
@@ -58,9 +62,10 @@ def run(config_path: str, dry_run: bool) -> None:
     # Safety gate: connects and REFUSES anything that isn't a demo account.
     info = connection.connect(creds)
     mode = "DRY-RUN (no orders)" if dry_run else "LIVE DEMO TRADING"
+    news_state = "news ON" if news_cfg.enabled else "news off"
     print(f"[{_now_iso()}] connected demo acct {info.login} | equity={info.equity:.2f} "
-          f"| {symbol} {tf} | {mode}")
-    j.log_event(_now_iso(), "INFO", f"started {mode} on {symbol} {tf}")
+          f"| {symbol} {tf} | {mode} | {news_state}")
+    j.log_event(_now_iso(), "INFO", f"started {mode} on {symbol} {tf} ({news_state})")
 
     sym = execution.ensure_symbol(symbol)
     last_bar_time = None
@@ -72,7 +77,7 @@ def run(config_path: str, dry_run: bool) -> None:
                 if bar_time != last_bar_time:
                     last_bar_time = bar_time
                     _on_new_bar(cfg, strat, risk_mgr, j, symbol, tf, trend_tf,
-                                warmup, sym, dry_run)
+                                warmup, sym, dry_run, news_cfg, news_provider)
             except Exception as exc:  # keep the loop alive; log and continue
                 print(f"[{_now_iso()}] loop error: {exc}")
                 j.log_event(_now_iso(), "ERROR", str(exc))
@@ -86,7 +91,8 @@ def run(config_path: str, dry_run: bool) -> None:
         connection.shutdown()
 
 
-def _on_new_bar(cfg, strat, risk_mgr, j, symbol, tf, trend_tf, warmup, sym, dry_run):
+def _on_new_bar(cfg, strat, risk_mgr, j, symbol, tf, trend_tf, warmup, sym, dry_run,
+                news_cfg, news_provider):
     # Keep the journal in sync with reality before deciding anything new.
     reconcile_closed(j)
 
@@ -102,6 +108,21 @@ def _on_new_bar(cfg, strat, risk_mgr, j, symbol, tf, trend_tf, warmup, sym, dry_
 
     if not sig.is_actionable:
         return
+
+    # News/sentiment overlay: can only veto a technical signal, never create one.
+    if news_cfg.enabled:
+        now = datetime.now(timezone.utc)
+        currencies = news_overlay.currencies_for(symbol)
+        event_risk = news_provider.event_risk(currencies, now)
+        sentiment = news_provider.sentiment(symbol, now)
+        print(f"[{_now_iso()}] news: event={event_risk.reason} | "
+              f"sentiment={sentiment.direction.value} "
+              f"({sentiment.confidence:.2f}) {sentiment.reason}")
+        sig, news_reason = news_overlay.apply_news(sig, event_risk, sentiment, news_cfg)
+        if not sig.is_actionable:
+            print(f"[{_now_iso()}] news veto: {news_reason}")
+            j.log_event(_now_iso(), "INFO", f"news veto: {news_reason}")
+            return
 
     total = len(execution.open_positions())
     in_symbol = len(execution.open_positions(symbol))

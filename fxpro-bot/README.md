@@ -78,6 +78,39 @@ Press **Ctrl-C** to stop; it prints a scorecard and writes `trades.csv`.
 4. Size the position so the stop-loss costs a fixed % of equity (default 0.5%).
 5. Place the order (or just log it in `--dry-run`) and journal everything.
 
+## News & sentiment layer (optional, off by default)
+
+The bot can factor in "live world happenings." **Honest framing up front:** news
+*moves* FX but does **not** reliably *predict* it — pros price headlines in within
+seconds and retail has no latency edge. So this layer can only ever turn a technical
+signal into **"no trade"** — it never invents trades. It comes in two honestly-scoped
+parts:
+
+1. **Economic-calendar risk filter (the proven part).** Don't open new trades from a
+   set window before to after a high-impact scheduled release (NFP, CPI, rate
+   decisions) for the pair's currencies, where spreads blow out. Free data via the
+   ForexFactory weekly JSON.
+2. **Sentiment overlay (experimental).** Claude reads fresh RSS headlines and returns
+   `{direction, confidence, reason}`. By default (`gate` mode) it **vetoes** a technical
+   trade that fights strong fresh sentiment; it does not open trades on its own.
+
+Enable and tune it in the `news:` section of `config.yaml`. For the Claude engine, set
+`ANTHROPIC_API_KEY` in `.env` (costs a little per call — `claude-haiku-4-5` is the
+cheap high-frequency option; `claude-opus-4-8` is the nuanced default). If a feed or
+the API is down, the bot logs it and falls back to the pure technical signal — a dead
+feed never blocks trading.
+
+**Measure it, don't trust it.** The calendar filter is replayable in the backtester so
+you can see its effect on the scorecard:
+
+```bash
+python -m src.backtest --csv EURUSD_M15.csv \
+  --calendar-csv calendar.csv   # columns: time,currency,impact,title
+```
+
+(Historical-headline sentiment backfill is out of scope; live sentiment scores are
+cached so the live bot doesn't re-pay per bar.)
+
 ## Backtesting (validate before you trust it)
 
 Before letting a strategy trade even the demo account, replay it over historical
@@ -146,5 +179,11 @@ src/
   timeframes.py   pure timeframe metadata (resample freq + bar duration)
   backtest.py     historical replay using the same strategy/risk/scorecard code
   bot.py          main loop
-tests/            unit tests for strategy, risk, journal, backtest
+  news/           optional news & sentiment layer
+    provider.py     NewsProvider interface + EventRisk/Sentiment dataclasses
+    calendar.py     economic-calendar risk filter (live JSON + CSV for backtest)
+    headlines.py    RSS headline fetcher (live-only)
+    sentiment.py    Claude / rule-based engines + sentiment cache
+    overlay.py      combine news with the technical signal (veto-only)
+tests/            unit tests for strategy, risk, journal, backtest, news
 ```

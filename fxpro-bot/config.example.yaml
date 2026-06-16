@@ -39,3 +39,25 @@ backtest:
   tick_value: 1.0
   spread: 0.00010             # ~1 pip, charged once per round-trip trade
   commission_per_lot: 0.0     # account currency per lot, round trip
+
+# --- News & sentiment layer (optional; off by default) ---
+# Honest note: news moves FX but does NOT reliably predict it. This layer is for
+# RISK (avoid trading into high-impact releases) and an experimental sentiment veto.
+# It can only ever turn a technical signal into "no trade" — it never invents trades.
+news:
+  enabled: false              # master switch for the whole layer
+
+  # Economic-calendar risk filter (the proven part)
+  event_filter_enabled: true
+  pre_minutes: 30             # block new trades this long BEFORE an event...
+  post_minutes: 30            # ...and this long after
+  impact_threshold: high      # low | medium | high
+
+  # Sentiment overlay (experimental)
+  sentiment_mode: gate        # off | gate (veto conflicting trades) | confirm (require agreement)
+  min_confidence: 0.6         # only act on sentiment at/above this confidence
+  sentiment_engine: claude    # claude | rule
+  model: claude-opus-4-8      # cheaper high-frequency option: claude-haiku-4-5
+  freshness_minutes: 180      # only consider headlines newer than this
+  cache_db: sentiment_cache.sqlite
+  feeds: []                   # optional RSS overrides; empty = sensible defaults

@@ -35,6 +35,7 @@ import pandas as pd
 
 from . import journal, risk, strategy, timeframes
 from .config import load_config
+from .news import overlay as news_overlay
 from .strategy import Direction
 
 
@@ -158,8 +159,13 @@ def run_backtest(
     initial_balance: float,
     risk_pct: float,
     warmup: int = 300,
+    symbol: str = "EURUSD",
+    news_provider=None,
+    news_cfg=None,
 ) -> BacktestResult:
     df = df.sort_values("time").reset_index(drop=True)
+    news_on = news_provider is not None and news_cfg is not None and news_cfg.enabled
+    currencies = news_overlay.currencies_for(symbol) if news_on else set()
     trend_full = resample_ohlc(df, trend_tf)
     trend_full["close_time"] = trend_full["time"] + timeframes.duration(trend_tf)
     entry_dur = timeframes.duration(entry_tf)
@@ -206,6 +212,13 @@ def run_backtest(
             entry_slice = df.iloc[max(0, i + 1 - warmup): i + 1]
             trend_slice = trend_full[trend_full["close_time"] <= decision_time].tail(warmup)
             sig = strat.generate(entry_slice, trend_slice)
+            # News overlay (same logic as the live bot): can only veto, replayed
+            # deterministically from the CSV calendar + sentiment cache.
+            if news_on and sig.is_actionable:
+                at = decision_time.to_pydatetime()
+                event_risk = news_provider.event_risk(currencies, at)
+                sentiment = news_provider.sentiment(symbol, at)
+                sig, _ = news_overlay.apply_news(sig, event_risk, sentiment, news_cfg)
             if sig.is_actionable:
                 allowed, _ = rm.can_open_new(
                     equity=equity, open_positions_total=0, open_positions_symbol=0)
@@ -280,6 +293,8 @@ def main() -> None:
                      help="pull history from a running MT5 terminal (Windows)")
     ap.add_argument("--config", default="config.yaml")
     ap.add_argument("--bars", type=int, default=20000, help="bars to pull for --from-mt5")
+    ap.add_argument("--calendar-csv", help="economic-calendar CSV (time,currency,impact,"
+                    "title) to apply the news risk filter and measure its effect")
     ap.add_argument("--trades-out", default="backtest_trades.csv")
     ap.add_argument("--equity-out", default="backtest_equity.csv")
     args = ap.parse_args()
@@ -303,11 +318,26 @@ def main() -> None:
     else:
         df = _load_from_mt5(symbol, entry_tf, args.bars)
 
+    # Calendar risk filter, replayed from a CSV (sentiment is out of scope for
+    # historical replay, so the overlay runs in event-filter-only mode here).
+    news_provider = news_cfg = None
+    if args.calendar_csv:
+        from .news.calendar import CsvCalendar
+        nc = news_overlay.news_config_from(cfg)
+        news_provider = CsvCalendar(
+            args.calendar_csv, pre_minutes=nc.pre_minutes,
+            post_minutes=nc.post_minutes, threshold=nc.impact_threshold)
+        news_cfg = news_overlay.NewsConfig(
+            enabled=True, event_filter_enabled=True, sentiment_mode="off",
+            pre_minutes=nc.pre_minutes, post_minutes=nc.post_minutes,
+            impact_threshold=nc.impact_threshold)
+
     result = run_backtest(
         df, strat=strategy.from_config(cfg), risk_cfg=risk.from_config(cfg),
         entry_tf=entry_tf, trend_tf=trend_tf, spec=spec_from_config(cfg),
         costs=costs_from_config(cfg), initial_balance=initial_balance,
-        risk_pct=risk_pct, warmup=warmup)
+        risk_pct=risk_pct, warmup=warmup, symbol=symbol,
+        news_provider=news_provider, news_cfg=news_cfg)
 
     print(f"Backtested {len(df)} bars ({entry_tf}, trend {trend_tf}) from "
           f"{df['time'].iloc[0]} to {df['time'].iloc[-1]}")
