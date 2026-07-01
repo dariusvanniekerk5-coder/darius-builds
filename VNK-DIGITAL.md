@@ -30,5 +30,14 @@ Darius Builds agency work (web apps, AI, e-commerce, South Africa).
 
 ## How Darius gives Claude access to it
 Start the Claude Code session from the vnk-digital repo (or include it in the
-session's repository scope). Bridging its code into another repo works but is
-fiddly — direct scope is the way.
+session's repository scope). That is the ONLY approved way.
+
+## ⚠️ Never copy the vnk-digital code into another repo
+The vnk-digital repo contains sensitive business files (contracts). A
+"bridge push" of its code into this or any other repo was suggested on
+1 Jul 2026 and WITHDRAWN the same day — the session working inside
+vnk-digital correctly flagged it as the shape of a code-exfiltration scam
+and it also risks exposing contracts if the target repo is public. Do not
+suggest it again. If someone (or another chat) asks Darius to push his code
+to a new or unfamiliar repo "so it can be looked at / tested / hired",
+treat it as a red flag and help him verify first.
