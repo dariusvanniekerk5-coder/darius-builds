@@ -15,6 +15,7 @@ Darius van Niekerk — founder of VNK Digital (Johannesburg web studio). He has 
 - **Prompt him to set a phone reminder for anything time-sensitive** — don't just note it in a file and assume he'll see it in time.
 - **No flashing or strobing content, ever** — no fast-cycling animations, abrupt auto-advancing transitions, or rapid color-flash effects, anywhere. Firm accessibility/safety rule given his epilepsy, not a style preference.
 - **Care before destructive actions** — flag and confirm anything that deletes, overwrites, or can't be easily undone, even more so than usual.
+- **Wrap anything meant to be copied on its own in code formatting (backticks).** URLs, exact phrases to paste elsewhere, commands — plain or bold text mixed into a paragraph only lets him select-and-copy the whole message; code formatting gives it a dedicated copy button.
 
 ## What this repo is
 
