@@ -9,9 +9,16 @@
 
 ## 1. Executive Summary
 
-VNK Digital (trading as Darius Builds) is an AI-accelerated development studio. Using Claude-powered development workflows, a small team of 2–4 people can deliver production-grade websites, web apps, e-commerce stores, and AI chatbots **2–3x faster than traditional agencies** — and that gap is the business.
+VNK Digital is an AI-accelerated development studio. Using Claude-powered development workflows, a small team of 2–4 people can deliver production-grade websites, web apps, e-commerce stores, and AI chatbots **2–3x faster than traditional agencies** — and that gap is the business.
 
-The current site already proves the model works: live transaction apps in production, a modern stack (React, Node, Supabase, PayFast), and real delivery guarantees (on-time or 10% off, 7-day deposit refund). What's missing is: (a) positioning that leads with **speed** instead of discount, (b) **recurring revenue**, and (c) a **repeatable delivery system** so hired builders produce at Darius-level quality.
+The foundation is already strong. The live site (vnkdigital.co.za) has productized packages (Starter R5,500 / Standard R8,500 / E-commerce R15,000), **care plans already selling recurring revenue** (R500–R1,500/mo), add-on services (chatbots, PWA, ads, SEO, copywriting), and a WhatsApp-first funnel. The Darius Builds portfolio proves the high end: live transaction apps, marketplaces, and corporate AI assistants on a modern stack (React, Node, Supabase, PayFast).
+
+What's missing is: (a) **speed promises and guarantees on every package** — the single biggest differentiator, currently absent from the live site; (b) a **high-ticket custom apps tier** on VNK Digital (web apps from R28k live only on the Darius Builds side); (c) a **top care tier with dev hours** (~R2,450/mo) to lift recurring revenue per client; and (d) a **repeatable delivery system** so hired builders produce at Darius-level quality.
+
+### Brand architecture (two brands → one funnel)
+- **VNK Digital** = the public, productized SME brand: sites, stores, chatbots, care plans, growth. All marketing points here.
+- **Darius Builds** = the credibility layer: the developer, the portfolio, the case studies. Link it from VNK's About page as proof of who's behind the work.
+- Add a **"Custom Web Apps — from R28,000, MVP in 21 days"** tier to VNK Digital so high-ticket work flows through the same funnel instead of living on a separate site.
 
 **12-month targets:**
 
@@ -20,16 +27,14 @@ The current site already proves the model works: live transaction apps in produc
 | Team | 1 | 2 (Darius + 1 builder) | 4 (Darius + 2 builders + part-time sales/PM) |
 | Projects/month | 2–4 | 6–8 | 12–16 |
 | Monthly revenue | ~R30–60k | ~R120–160k | ~R250–350k |
-| Recurring (care plans) | R0 | ~R15k/mo | ~R50k/mo |
+| Recurring (care plans) | early base | ~R15k/mo | ~R50k/mo |
 
 ---
 
 ## 2. Positioning — From "Cheapest" to "Fastest, Guaranteed"
 
-### Current message (price-led)
-> "Up to 60% below agency rates."
-
-This attracts price-shoppers and invites a race to the bottom that anyone with a Claude subscription can join next year.
+### Current message (feature-led)
+The live VNK site sells *what* you build ("Everything you need to get online and grow"), and the Darius Builds site sells *discount* ("60% below agency rates"). Neither leads with the thing competitors can't easily copy: **guaranteed delivery speed**.
 
 ### New message (speed + certainty-led)
 > **"Agency-quality builds, live in days — not months. On time, or 10% off. Guaranteed."**
@@ -49,40 +54,52 @@ Keep the agency comparison as *supporting proof*, not the headline. The three pi
 
 ---
 
-## 3. Services & Pricing (Revised)
+## 3. Services & Pricing (Revised — based on the live vnkdigital.co.za menu)
 
-Current prices are strong on the top end but **too cheap at entry level**, and there's no recurring revenue. Revised menu — every package gets a *named speed promise*:
+The live pricing is already well-judged at entry level. The changes are: attach a **named speed promise to every package**, fix the two underpriced items (e-commerce, top care tier), and add the missing high-ticket tier.
 
-| Package | Current | **New Price (from)** | **Speed Promise** | Notes |
+### Website packages
+
+| Package | Live price | **Recommendation** | **Speed Promise** | Notes |
 |---|---|---|---|---|
-| Launch Page (1-page) | R2,500 | **R4,500** | **Live in 48 hours** | The "48-hour site" is the marketing hook. R2,500 barely covers admin; R4,500 with a 48h promise sells *better*, not worse. |
-| Business Website (5 pages) | R5,500 | **R8,500** | **Live in 5 business days** | Includes copy polish, SEO basics, analytics, WhatsApp button. |
-| E-commerce Store | R17,995 | **R22,500** | **Selling in 14 days** | PayFast/Yoco live, products loaded, order emails working. |
-| AI Chatbot / Assistant | R12,500 | **R15,000** | **Answering in 10 days** | Trained on client's docs; this is a differentiator few SA shops can build properly. |
-| Full Web App | R16,500 | **R28,000** | **MVP in 21 days** | Login, database, payments, admin. R16.5k for 3–6 weeks of app work is underpriced even AI-assisted. |
-| PWA Mobile App | R19,500 | **R24,500** | **Installable in 21 days** | |
-| Custom / API work | R280/hr | **R450/hr** (min 10 hrs) | 5–7 days | R280/hr signals junior. R450 is still half the agency R900+. |
+| Starter (1-page, multi-section) | R5,500 | **Keep R5,500** | **Live in 3 business days** | Well priced. The speed promise makes it the flagship hook. |
+| Standard (up to 5 pages) | R8,500 | **Keep R8,500** | **Live in 7 business days** | Already the "Most Popular" — the promise strengthens it. |
+| E-commerce Store | R15,000 | **R18,500** | **Selling in 14 days** | Underpriced for PayFast/Yoco live + products loaded + order emails. Raise once 2–3 store case studies exist. |
+| **Custom Web App (NEW on VNK)** | — | **from R28,000** | **MVP in 21 days** | Login, database, payments, admin. Currently only implied via Darius Builds — put it on the VNK menu to lift average deal size. |
 
-*All prices "from", excl. VAT. 50% deposit to start (keep this). Speed promise clock starts when content/assets are received — put that in the contract.*
+### Chatbots & apps
 
-### The big miss: recurring revenue — **Care Plans**
+| Offer | Live price | **Recommendation** | **Speed Promise** |
+|---|---|---|---|
+| Basic chatbot | R1,500 setup | Keep — great low-friction entry product | Answering in 3 days |
+| AI-powered chatbot | R3,500 setup + monthly | Keep — the monthly fee is smart recurring revenue | Answering in 7 days |
+| **Custom AI assistant (NEW tier)** | "Advanced: quoted" | **from R15,000** — trained on client docs, memory, branded | Answering in 10 days |
+| PWA add-on | R3,500 setup | Keep | Installable in 7 days |
+| Full PWA app | — | **from R24,500** | Installable in 21 days |
 
-Every completed project should convert to a monthly plan. This is what makes the business survivable between project droughts:
+### Care plans (recurring — already live, one fix)
 
-| Plan | Price/mo | Includes |
+| Plan | Live price | **Recommendation** |
 |---|---|---|
-| **Keep-Alive** | R450 | Hosting, SSL, backups, uptime monitoring, security updates |
-| **Growth** | R950 | Keep-Alive + 1 hr changes/mo, monthly analytics summary |
-| **Partner** | R2,450 | Growth + 4 hrs dev/mo, priority queue, quarterly improvements |
+| Basic Care | R500/mo | Keep — hosting, backups, security, minor edits |
+| Standard Care | R800/mo | Keep — more edits, priority support |
+| Growth Care | R1,500/mo | Keep for SEO/ads support, **and add:** |
+| **Partner Care (NEW)** | — | **R2,450/mo** — Standard Care + 4 hrs dev/mo, priority queue, quarterly improvements. This is the tier web-app and e-commerce clients should land on. |
 
-30 sites on care plans = **R15k–R30k/month before selling anything**. Target: convert **70%+ of every project** to a plan at handover (build it into the closing conversation: "Who's looking after this once it's live?").
+Care plans are already the right move — now push conversion: target **70%+ of every project** onto a plan at handover ("Who's looking after this once it's live?"). 30 clients across tiers ≈ **R20k–R35k/month before selling anything new**.
 
-### Keep (unchanged — these are competitive weapons)
+### Add-ons (live — all fine, keep)
+Extra pages R450 · Logo & branding from R1,500 · Copywriting R350/page · Google Ads setup R1,500 + R1,500/mo management · SEO from R2,500/mo · Hosting from R69/mo.
+
+*All prices "from", excl. VAT. 50% deposit to start. Speed promise clock starts when content/assets are received — put that in the contract.*
+
+### Guarantees — adopt the Darius Builds stack on VNK Digital
+These exist on the Darius Builds site but not on VNK, where buyers actually land. Brand them as the **"VNK Delivery Guarantee"** and put them next to every price:
 - 50/50 deposit split
-- Free revisions during the build
+- Free revisions during the build (batched, within locked scope)
 - 14-day post-launch support
 - 7-day deposit refund window
-- On-time or 10% off
+- **On time, or 10% off**
 
 ---
 
@@ -191,7 +208,7 @@ Margins stay high (60%+ after wages) because the cost of goods is mostly time, a
 
 | When | Milestone |
 |---|---|
-| **Month 1** | New pricing + speed promises live on site. Guarantee stack branded as "VNK Delivery Guarantee". Care plans launched and pitched to all past clients. Brief form + QA checklist written. |
+| **Month 1** | Speed promises + "VNK Delivery Guarantee" live on every package. Partner Care tier and Custom Web App tier added to the site. Care plans pitched to all past clients. Brief form + QA checklist written. |
 | **Month 2** | Template library v1 (landing, 5-page, e-commerce). First three case-study one-pagers published. WhatsApp funnel + first ads live. |
 | **Month 3** | 5+ projects at new pricing. 10+ care-plan subscribers. Pick 2 verticals, publish tailored package pages. Start builder recruitment (paid trial project). |
 | **Month 4–6** | Builder #1 productive on templates. 6–8 projects/month. R100k+ month achieved. 20+ Google reviews. |
