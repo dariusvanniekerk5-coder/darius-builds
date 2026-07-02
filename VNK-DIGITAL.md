@@ -49,6 +49,24 @@ which is a different, unrelated document about product sales):
 - **This two-invoice format (website vs. app, separately) is now the standard
   template for all future clients** — reuse the same split and layout.
 
+## DocuSign contracts — drafted 2 Jul 2026, awaiting Darius's review before sending
+Darius connected DocuSign (na4, account 952234d0-…, 0 templates yet). Three
+documents drafted as PDFs for his review — NOT yet loaded into DocuSign, NOT
+sent to anyone:
+1. **Nourkrin service & payment agreement** — scope of work (website + app),
+   both payment schedules (R13.5k website balance, R14k app balance in 3
+   instalments), IP transfers to client only on full payment, late-payment
+   terms (7-day notice, 14-day pause/access-restriction).
+2. **Standard care-plan template** (reusable for future clients) — R950/month
+   proposed: hosting/uptime + up to 1hr/month small updates, based on Darius's
+   own R280/hr rate (there was NO existing retainer pricing on darius-builds
+   site to reference — this is a fresh proposal, confirm before use).
+3. **Furbabies care-plan proposal** — R450/month estimate (lighter, "very
+   minimal" site per Darius). Furbabies repo NOT in session scope — price is
+   an ESTIMATE pending Darius confirming actual page count/features.
+Next step: once Darius approves wording/pricing, create the matching DocuSign
+templates/envelopes via the DocuSign MCP tools.
+
 ## ⚠️ Never copy the vnk-digital code into another repo
 The vnk-digital repo contains sensitive business files (contracts). A
 "bridge push" of its code into this or any other repo was suggested on
