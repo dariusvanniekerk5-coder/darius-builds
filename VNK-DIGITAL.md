@@ -74,16 +74,21 @@ sent to anyone:
 ## Furbabies — where it actually lives (confirmed 2 Jul 2026)
 Live at **furbabiesspa.co.za**. Hosted as a **Cloudflare Worker named
 `soft-union-e6f7`** (id `09b605b4323941e99dfbd625b9c5f857`, created 14 Jun
-2026 — predates the Nourkrin work). NOT found under any name on Darius's
-Netlify account, and NOT visible in his GitHub Desktop clone list — strongly
-suggests it was deployed directly (e.g. `wrangler deploy`) rather than
-connected to a GitHub repo via Cloudflare's Git integration. `workers_get_worker_code`
-errored out (empty/invalid response) when tried, so its source couldn't be
-pulled that way either. **To confirm whether a GitHub repo backs it at all**,
-check the Worker's "Build & deploy" / Git integration settings in the
-Cloudflare dashboard directly — that's the definitive answer, not yet done.
-If no repo exists, working on it properly means pulling the live files down
-and starting fresh version control, not "finding" a repo that isn't there.
+2026 — predates the Nourkrin work). **GitHub repo confirmed:
+`dariusvanniekerk5-coder/furbabies-groomers`** (found via GitHub Desktop's
+clone list — it just wasn't in this session's repo scope, hence the earlier
+"not found" confusion; nothing was actually missing). To work on it directly
+— review content, fix the care-plan price for real, check the no-flashing
+rule — start a session with `furbabies-groomers` added to its repo scope,
+same pattern as vnk-digital-website. Not yet confirmed whether that repo is
+Git-connected to the `soft-union-e6f7` Worker for auto-deploy, or deployed
+manually (e.g. `wrangler deploy`) — check on first access.
+
+**Also spotted in Darius's repo list, not yet given a memory system (flag,
+no action needed yet):** `clearpath-site` and `clearpath-website` (matches
+the "clearpath-financial-wellness" Netlify project found earlier — a likely
+separate business/project cluster) and `mendaapp` (alongside `Menda-Hobby`).
+
 Now covered by the uptime monitor (darius-builds PR #9, part of the
 vnkdigital.co.za + nourkrin-sa.netlify.app + furbabiesspa.co.za trio) —
 that only needs the public URL, so it works regardless of any of the above.
