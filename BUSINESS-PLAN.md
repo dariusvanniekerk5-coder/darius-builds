@@ -13,12 +13,12 @@ VNK Digital is an AI-accelerated development studio. Using Claude-powered develo
 
 The foundation is already strong. The live site (vnkdigital.co.za) has productized packages (Starter R5,500 / Standard R8,500 / E-commerce R15,000), **care plans already selling recurring revenue** (R500–R1,500/mo), add-on services (chatbots, PWA, ads, SEO, copywriting), and a WhatsApp-first funnel. The Darius Builds portfolio proves the high end: live transaction apps, marketplaces, and corporate AI assistants on a modern stack (React, Node, Supabase, PayFast).
 
-What's missing is: (a) **speed promises and guarantees on every package** — the single biggest differentiator, currently absent from the live site; (b) a **high-ticket custom apps tier** on VNK Digital (web apps from R28k live only on the Darius Builds side); (c) a **top care tier with dev hours** (~R2,450/mo) to lift recurring revenue per client; and (d) a **repeatable delivery system** so hired builders produce at Darius-level quality.
+What's missing is: (a) **speed promises and guarantees on every package** — the single biggest differentiator, currently absent from the live site; (b) a **high-ticket custom apps tier** on VNK Digital (an App Development package from R25,000 was added to the site menu on 2026-07-01); (c) a **top care tier with dev hours** (~R2,450/mo) to lift recurring revenue per client; and (d) a **repeatable delivery system** so hired builders produce at Darius-level quality.
 
 ### Brand architecture (two brands → one funnel)
 - **VNK Digital** = the public, productized SME brand: sites, stores, chatbots, care plans, growth. All marketing points here.
 - **Darius Builds** = the credibility layer: the developer, the portfolio, the case studies. Link it from VNK's About page as proof of who's behind the work.
-- Add a **"Custom Web Apps — from R28,000, MVP in 21 days"** tier to VNK Digital so high-ticket work flows through the same funnel instead of living on a separate site.
+- Add a **"Custom Web Apps — from R25,000, MVP in 21 days"** tier to VNK Digital so high-ticket work flows through the same funnel instead of living on a separate site. (Done: the site's App Development package, at R25,000 by Darius's decision on 2026-07-02.)
 
 **12-month targets:**
 
@@ -56,7 +56,7 @@ Keep the agency comparison as *supporting proof*, not the headline. The three pi
 
 ## 3. Services & Pricing (Revised — based on the live vnkdigital.co.za menu)
 
-The live pricing is already well-judged at entry level. The changes are: attach a **named speed promise to every package**, fix the two underpriced items (e-commerce, top care tier), and add the missing high-ticket tier.
+The live pricing is already well-judged at entry level. The changes are: attach a **named speed promise to every package**, add the missing top care tier, and add the missing high-ticket tier. Current package prices stay as they are (Darius's decision, 2026-07-02) — any raises are future options tied to case-study proof, not part of this plan's launch.
 
 ### Website packages
 
@@ -64,8 +64,8 @@ The live pricing is already well-judged at entry level. The changes are: attach 
 |---|---|---|---|---|
 | Starter (1-page, multi-section) | R5,500 | **Keep R5,500** | **Live in 3 business days** | Well priced. The speed promise makes it the flagship hook. |
 | Standard (up to 5 pages) | R8,500 | **Keep R8,500** | **Live in 7 business days** | Already the "Most Popular" — the promise strengthens it. |
-| E-commerce Store | R15,000 | **R18,500** | **Selling in 14 days** | Underpriced for PayFast/Yoco live + products loaded + order emails. Raise once 2–3 store case studies exist. |
-| **Custom Web App (NEW on VNK)** | — | **from R28,000** | **MVP in 21 days** | Login, database, payments, admin. Currently only implied via Darius Builds — put it on the VNK menu to lift average deal size. |
+| E-commerce Store | R15,000 | **Keep R15,000** | **Selling in 14 days** | Keeping the live price (2026-07-02 decision). A raise (~R18,500) stays a future option once 2–3 store case studies exist. |
+| **Custom Web App ("App Development" on VNK)** | R25,000 | **Keep from R25,000** | **MVP in 21 days** | Login, database, payments, admin. On the VNK menu since 2026-07-01; keeping R25,000 (2026-07-02 decision) — deliberately under the SA market's typical R40k+ starting point. |
 
 ### Chatbots & apps
 
