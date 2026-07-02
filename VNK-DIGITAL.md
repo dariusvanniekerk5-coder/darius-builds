@@ -65,7 +65,11 @@ sent to anyone:
    (was R450, too high). Confirmed site profile: single-page mobile site, dog
    grooming business, WhatsApp contact link only, no backend/database. Hosting
    + uptime + minor text edits on request, no fixed monthly-hour allowance
-   (rarely needed for a page this size). Furbabies repo NOT in session scope.
+   (rarely needed for a page this size). **Furbabies is ANOTHER site Darius
+   built for Donovan's portfolio — same client relationship as Nourkrin, not
+   a separate client** (corrected 2 Jul 2026; earlier notes wrongly implied
+   otherwise). Its own repo is NOT in any current session's scope — a future
+   session needs it added to its repo scope to read/edit the code directly.
 Next step: once Darius approves wording/pricing, create the matching DocuSign
 templates/envelopes via the DocuSign MCP tools.
 
