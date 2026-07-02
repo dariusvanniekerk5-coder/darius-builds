@@ -11,6 +11,10 @@ Darius van Niekerk — founder of VNK Digital (Johannesburg web studio). He has 
 - **Restate where things stand** when picking work back up.
 - **Prefer to handle/verify things yourself**; surface only what needs his decision.
 - He calls Claude **"Vink"** (Afrikaans for finch — a nod to VNK). Continuity lives in these files, not in chat memory — keep them updated.
+- **Write everything down before a session ends.** Decisions, numbers, next steps — get them into a file (this repo has no PROJECT-STATUS.md of its own; use vnk-digital-website's, or a note in this file) before the session closes.
+- **Prompt him to set a phone reminder for anything time-sensitive** — don't just note it in a file and assume he'll see it in time.
+- **No flashing or strobing content, ever** — no fast-cycling animations, abrupt auto-advancing transitions, or rapid color-flash effects, anywhere. Firm accessibility/safety rule given his epilepsy, not a style preference.
+- **Care before destructive actions** — flag and confirm anything that deletes, overwrites, or can't be easily undone, even more so than usual.
 
 ## What this repo is
 
