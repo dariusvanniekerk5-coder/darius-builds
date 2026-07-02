@@ -32,6 +32,23 @@ Darius Builds agency work (web apps, AI, e-commerce, South Africa).
 Start the Claude Code session from the vnk-digital repo (or include it in the
 session's repository scope). That is the ONLY approved way.
 
+## Client engagements — invoicing
+
+**Nourkrin SA (Donovan Visagie) — 2 Jul 2026.** Two SEPARATE invoices are used
+(kept apart deliberately so client-facing dev-fee documents never mix with
+Nourkrin's own product/Paystack paperwork, which lives only in the nourkrin-sa
+repo — see that repo's PROJECT-STATUS.md for the Paystack sample invoice,
+which is a different, unrelated document about product sales):
+- **INV-VNK-2026-001 — Website:** R27 000 total &middot; R13 500 paid &middot;
+  **R13 500 balance due**.
+- **INV-VNK-2026-002 — App (PWA):** R19 000 total &middot; R5 000 deposit paid
+  &middot; **R14 000 balance due**, in 3 instalments (R5 000 / R5 000 / R4 000).
+- Both PDFs generated 2 Jul 2026, VNK Digital / Darius Builds branded. Banking
+  details deliberately left as a placeholder in the PDF — Darius fills those in
+  himself before sending (never stored in a repo).
+- **This two-invoice format (website vs. app, separately) is now the standard
+  template for all future clients** — reuse the same split and layout.
+
 ## ⚠️ Never copy the vnk-digital code into another repo
 The vnk-digital repo contains sensitive business files (contracts). A
 "bridge push" of its code into this or any other repo was suggested on
