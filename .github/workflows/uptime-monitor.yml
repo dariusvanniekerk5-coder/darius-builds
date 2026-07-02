@@ -38,3 +38,16 @@ jobs:
             echo "::error::nourkrin-sa.netlify.app returned HTTP $code (expected 2xx/3xx)"
             exit 1
           fi
+
+  furbabies:
+    name: Furbabies Spa (furbabiesspa.co.za)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site responds
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 https://www.furbabiesspa.co.za/)
+          echo "HTTP status: $code"
+          if [ "$code" -lt 200 ] || [ "$code" -ge 400 ]; then
+            echo "::error::furbabiesspa.co.za returned HTTP $code (expected 2xx/3xx)"
+            exit 1
+          fi
