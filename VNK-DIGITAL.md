@@ -61,9 +61,11 @@ sent to anyone:
    proposed: hosting/uptime + up to 1hr/month small updates, based on Darius's
    own R280/hr rate (there was NO existing retainer pricing on darius-builds
    site to reference — this is a fresh proposal, confirm before use).
-3. **Furbabies care-plan proposal** — R450/month estimate (lighter, "very
-   minimal" site per Darius). Furbabies repo NOT in session scope — price is
-   an ESTIMATE pending Darius confirming actual page count/features.
+3. **Furbabies care-plan proposal** — CORRECTED 2 Jul 2026 to **R200/month**
+   (was R450, too high). Confirmed site profile: single-page mobile site, dog
+   grooming business, WhatsApp contact link only, no backend/database. Hosting
+   + uptime + minor text edits on request, no fixed monthly-hour allowance
+   (rarely needed for a page this size). Furbabies repo NOT in session scope.
 Next step: once Darius approves wording/pricing, create the matching DocuSign
 templates/envelopes via the DocuSign MCP tools.
 
