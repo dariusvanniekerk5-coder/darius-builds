@@ -1,0 +1,40 @@
+name: Uptime Monitor
+
+# Checks Darius's live client/business sites every 30 minutes, forever —
+# independent of any Claude Code session. Each site is its own job so one
+# outage never hides another, and a failed run triggers GitHub's normal
+# workflow-failure email to the repo owner. Add a new job block to monitor
+# another site once it goes live (e.g. nourkrinsa.co.za once the domain is
+# repointed, or darius-builds's own URL once it has one).
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  vnk-digital:
+    name: VNK Digital (vnkdigital.co.za)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site responds
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 https://vnkdigital.co.za)
+          echo "HTTP status: $code"
+          if [ "$code" -lt 200 ] || [ "$code" -ge 400 ]; then
+            echo "::error::vnkdigital.co.za returned HTTP $code (expected 2xx/3xx)"
+            exit 1
+          fi
+
+  nourkrin-preview:
+    name: Nourkrin SA preview (nourkrin-sa.netlify.app)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site responds
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 https://nourkrin-sa.netlify.app)
+          echo "HTTP status: $code"
+          if [ "$code" -lt 200 ] || [ "$code" -ge 400 ]; then
+            echo "::error::nourkrin-sa.netlify.app returned HTTP $code (expected 2xx/3xx)"
+            exit 1
+          fi
