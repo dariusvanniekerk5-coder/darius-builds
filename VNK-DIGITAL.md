@@ -70,6 +70,24 @@ sent to anyone:
    a separate client** (corrected 2 Jul 2026; earlier notes wrongly implied
    otherwise). Its own repo is NOT in any current session's scope — a future
    session needs it added to its repo scope to read/edit the code directly.
+
+## Furbabies — where it actually lives (confirmed 2 Jul 2026)
+Live at **furbabiesspa.co.za**. Hosted as a **Cloudflare Worker named
+`soft-union-e6f7`** (id `09b605b4323941e99dfbd625b9c5f857`, created 14 Jun
+2026 — predates the Nourkrin work). NOT found under any name on Darius's
+Netlify account, and NOT visible in his GitHub Desktop clone list — strongly
+suggests it was deployed directly (e.g. `wrangler deploy`) rather than
+connected to a GitHub repo via Cloudflare's Git integration. `workers_get_worker_code`
+errored out (empty/invalid response) when tried, so its source couldn't be
+pulled that way either. **To confirm whether a GitHub repo backs it at all**,
+check the Worker's "Build & deploy" / Git integration settings in the
+Cloudflare dashboard directly — that's the definitive answer, not yet done.
+If no repo exists, working on it properly means pulling the live files down
+and starting fresh version control, not "finding" a repo that isn't there.
+Now covered by the uptime monitor (darius-builds PR #9, part of the
+vnkdigital.co.za + nourkrin-sa.netlify.app + furbabiesspa.co.za trio) —
+that only needs the public URL, so it works regardless of any of the above.
+
 Next step: once Darius approves wording/pricing, create the matching DocuSign
 templates/envelopes via the DocuSign MCP tools.
 
