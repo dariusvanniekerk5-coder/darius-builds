@@ -42,7 +42,7 @@ The live VNK site sells *what* you build ("Everything you need to get online and
 Keep the agency comparison as *supporting proof*, not the headline. The three pillars:
 
 1. **Speed** — quote delivery in *days* on every package, and put the number in the headline of each package.
-2. **Certainty** — you already have the pieces: on-time-or-10%-off, 7-day deposit refund, 50/50 payment, 14-day support. Bundle these as the **"VNK Delivery Guarantee"** and brand it. No SA competitor at this level offers all four.
+2. **Certainty** — you already have the pieces: on-time-or-10%-off (VNK-fault delays only), 50/50 payment, free in-scope revisions, 14-day support. Bundle these as the **"VNK Delivery Guarantee"** and brand it. No SA competitor at this level offers all four.
 3. **Direct access** — one senior developer owning the build, no account managers. Keep this; it's genuinely rare.
 
 ### Tagline options
@@ -91,15 +91,22 @@ Care plans are already the right move — now push conversion: target **70%+ of 
 ### Add-ons (live — all fine, keep)
 Extra pages R450 · Logo & branding from R1,500 · Copywriting R350/page · Google Ads setup R1,500 + R1,500/mo management · SEO from R2,500/mo · Hosting from R69/mo.
 
-*All prices "from", excl. VAT. 50% deposit to start. Speed promise clock starts when content/assets are received — put that in the contract.*
+*All prices "from", excl. VAT. 50% deposit to start.*
 
-### Guarantees — adopt the Darius Builds stack on VNK Digital
-These exist on the Darius Builds site but not on VNK, where buyers actually land. Brand them as the **"VNK Delivery Guarantee"** and put them next to every price:
+### Guarantees — the "VNK Delivery Guarantee"
+Brand these and put them next to every price on the VNK site:
 - 50/50 deposit split
 - Free revisions during the build (batched, within locked scope)
 - 14-day post-launch support
-- 7-day deposit refund window
-- **On time, or 10% off**
+- **On time, or 10% off** — *when the delay is ours*
+
+**The fine print that protects you (goes in the contract and as a short "How the guarantee works" note on the site):**
+1. **The delivery clock only starts once we have everything we need** — content, images, logins, payment details, and the signed-off scope. The brief form (Section 4) defines exactly what "everything" means per package, so there's never a debate.
+2. **Client delays pause the clock.** If we're waiting on content, feedback, or approvals, those days don't count toward the promised timeline. Track wait-days in writing (a one-line WhatsApp/email: "Paused — waiting on product photos since Tue" is enough evidence).
+3. **The 10% discount applies only to delays caused by VNK** — not to late submissions, slow feedback, mid-build scope changes, or third-party failures outside our control (e.g. domain transfers, payment gateway approvals).
+4. **Scope changes restart the estimate.** New requests are quoted as an addendum with a revised delivery date.
+
+Framed this way it reads as fair rather than defensive — "we guarantee our side of the deadline" — and it kills the two ways clients could game it: sitting on content, then claiming the discount.
 
 ---
 
@@ -224,7 +231,7 @@ Margins stay high (60%+ after wages) because the cost of goods is mostly time, a
 | **Quality slip as team grows** | Mandatory QA gate — nothing ships without Darius's checklist sign-off. Hire debuggers, not prompters. |
 | **Key-man (everything is Darius)** | Document the pipeline; templates and checklists make delivery transferable. PM absorbs scheduling by M8. |
 | **Price war from copycats** | Compete on guarantee stack + documented delivery times + reviews + verticals — none of which a new entrant has on day one. Never respond by discounting. |
-| **Speed promise missed** | Clock starts only when client assets arrive (contractual). Cap monthly slots. The 10%-off guarantee caps downside and *builds* trust when honoured. |
+| **Speed promise missed** | Clock starts only when all client assets arrive, and client delays pause it (contractual — see guarantee fine print, Section 3). The 10%-off applies only to VNK-fault delays, capping downside; honouring it when it *is* your fault builds trust. |
 | **Client scope creep vs. "free revisions"** | Free revisions = within locked scope, batched in one round. New scope = quoted addendum. Lock scope in writing at kickoff. |
 | **AI platform cost/behaviour changes** | Multi-model capable stack; templates reduce dependence on raw generation. Margins tolerate 2–3x AI cost increases. |
 | **Security/payments failure** | QA checklist includes payment live-mode test, auth review, secrets audit. Professional indemnity insurance once revenue justifies it. |
@@ -234,7 +241,7 @@ Margins stay high (60%+ after wages) because the cost of goods is mostly time, a
 ## 10. Why This Wins
 
 1. **The speed is real and provable** — live transaction apps already running, built AI-first while agencies still bolt AI onto old processes.
-2. **The guarantee stack is unmatched** — deposit refund + on-time-or-10%-off + free revisions + support window. Certainty is what SMEs actually buy.
+2. **The guarantee stack is unmatched** — on-time-or-10%-off (fairly qualified) + free revisions + support window + 50/50 payments. Certainty is what SMEs actually buy.
 3. **The moat compounds** — every project adds templates, case studies, reviews, and care-plan revenue. A copycat starting next year starts at zero on all four.
 4. **The economics are forgiving** — high margins, deposits fund work, recurring revenue builds a floor, and each hire breaks even at a third of their capacity.
 
