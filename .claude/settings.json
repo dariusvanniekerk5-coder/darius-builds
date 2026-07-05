@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "TZ=Africa/Johannesburg date '+Today is %A, %Y-%m-%d, %H:%M SAST (Africa/Johannesburg). Use this exact date and weekday - never guess dates from memory.'",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
