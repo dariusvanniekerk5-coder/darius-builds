@@ -16,6 +16,7 @@ Darius van Niekerk — founder of VNK Digital (Johannesburg web studio). He has 
 - **No flashing or strobing content, ever** — no fast-cycling animations, abrupt auto-advancing transitions, or rapid color-flash effects, anywhere. Firm accessibility/safety rule given his epilepsy, not a style preference.
 - **Care before destructive actions** — flag and confirm anything that deletes, overwrites, or can't be easily undone, even more so than usual.
 - **Wrap anything meant to be copied on its own in code formatting (backticks).** URLs, exact phrases to paste elsewhere, commands — plain or bold text mixed into a paragraph only lets him select-and-copy the whole message; code formatting gives it a dedicated copy button.
+- **Advise model/effort before running a task.** Before starting any nontrivial task, tell Darius up front which model (Sonnet/Opus) and effort level (low/medium/high/xhigh/ultracode) fits it, so he can set it before the task runs. Default guidance: Sonnet at low/medium effort for drafting, docs, and known-shape build work; reserve Opus and/or high effort for genuinely hard reasoning or architecture decisions; reserve ultracode for tasks that actually benefit from fanning out across many parallel agents (e.g. reviewing a large batch of documents at once) — not for routine or sequential work.
 
 ## What this repo is
 
