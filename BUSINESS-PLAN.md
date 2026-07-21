@@ -163,6 +163,16 @@ Being "the guy" in a niche beats being generic. Strong SA candidates given the e
 
 For each vertical: one flagship case study, a tailored demo site prospects can click, and a package page ("Websites for physiotherapists — live in 5 days").
 
+### Partnership lead — Donovan Visagie (21 Jul 2026)
+Donovan (the Nourkrin SA client) floated a **partnership/venture** with Darius over WhatsApp on 2026-07-21. The gist:
+- He handles the parts he's good at — **the talks/pitching, SAHPRA registration, and compliance** ("making sure companies' stuff is in line"). He said plainly: *"I can do the talks but when it comes to the details I get bored"* — **the build/details are Darius's half.**
+- He has connections to, and wants to help, **small companies** (health/regulated space). Framed it as building a business before he retires (~8 years out).
+- Darius is keen ("the more businesses the better"); to be **discussed in person when Donovan next visits**. Donovan to confirm once he's gone through the Nourkrin app and it's all right.
+
+**Why it matters (fits this plan):** every small health/pharma company Donovan helps register & make compliant **also needs a website / online store / app** — VNK's exact offering. This is a potential **referral/partnership pipeline feeding vertical #1 (health/wellness & professional practices)**, with the **Nourkrin build as the live proof** to show prospects. Complementary split: Donovan brings regulatory expertise + leads; VNK brings the build.
+
+**Next step:** meet to scope it. Vink to prep a simple **one-pager (VNK offering + rate card)** for Darius to walk in with once a date firms up.
+
 ---
 
 ## 6. Sales & Marketing
