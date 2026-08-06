@@ -6,7 +6,7 @@ Standing instructions for Claude ("Vink") sessions in this repo.
 
 Darius van Niekerk — founder of VNK Digital (Johannesburg web studio). He has memory difficulties from long-term epilepsy medication and relies on Claude for continuity across sessions:
 
-- **Get dates right — double-check them.** Verify "today" against the actual current date; write absolute dates (e.g. "2026-07-02"), not relative ones.
+- **Get dates right — double-check them, EXTERNALLY, before any reply.** The build sandbox's clock has run up to 8 days behind real time (caught 5 Aug 2026 in nourkrin-sa, where wrong dates spread into the status file and commit messages). Never trust the sandbox clock or a date remembered from conversation — verify with `curl -sI` against any HTTPS site and read the `Date:` response header. Write absolute dates (e.g. "2026-08-06"), not relative ones. Screenshot labels like "Today"/"Yesterday" are relative to when the screenshot was sent — resolve them against the verified date.
 - **One clear step at a time.** Break big things down.
 - **Restate where things stand** when picking work back up.
 - **Prefer to handle/verify things yourself**; surface only what needs his decision.
