@@ -42,11 +42,23 @@ which is a different, unrelated document about product sales):
 - **INV-VNK-2026-001 — Website:** R27 000 total.
 - **INV-VNK-2026-002 — App (PWA):** R19 000 total, originally R5 000
   deposit + R14 000 in 3 instalments (R5 000 / R5 000 / R4 000).
-- 💰 **Payment update (7 Aug 2026):** Darius confirmed Donovan has since
-  paid. The 2 Jul balances above are historical and no longer current.
-  ⚠️ **The exact current balance was not stated and is NOT recorded here** —
-  if a future session needs the figure, ask Darius rather than assuming
-  either that it is fully settled or that anything is still owed.
+- ⚠️ **The 2 Jul balances above are historical — do NOT quote them as
+  current.** They were correct on 2 Jul 2026 and have not been tracked
+  since. Ask Darius for the live position rather than assuming.
+- 💰 **App-store fees are already covered (7 Aug 2026):** Darius confirmed
+  Donovan has **already paid him for the app-store subscriptions** — i.e.
+  the Google Play US$25 and the Apple US$99/yr are funded, not something
+  to chase Donovan for again. This matches the standing arrangement in
+  BUSINESS-PLAN.md: app-store accounts, Zoom and printing go in the
+  client's name and are billed to them, so Darius never fronts running
+  costs.
+  ⚠️ **But funding is NOT the same as account ownership.** Google and
+  Apple both tie ownership to whoever *registers* the account, so the
+  Play Console and Apple Developer accounts must still be created from
+  **Donovan's** side, in Nourkrin's name, with Darius added as Admin
+  afterwards. Do not let "he's already paid" become a reason for Darius
+  to register them himself — that creates a formal ownership transfer
+  later.
 - Both PDFs generated 2 Jul 2026, VNK Digital / Darius Builds branded. Banking
   details deliberately left as a placeholder in the PDF — Darius fills those in
   himself before sending (never stored in a repo).
