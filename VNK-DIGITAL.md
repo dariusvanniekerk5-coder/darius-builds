@@ -59,6 +59,28 @@ which is a different, unrelated document about product sales):
   afterwards. Do not let "he's already paid" become a reason for Darius
   to register them himself — that creates a formal ownership transfer
   later.
+
+#### 💳 Whose card actually pays (decided 7 Aug 2026)
+The card used does **not** affect ownership — only the Google/Apple
+account that registers does. But the two stores differ in what matters:
+
+- **Google (US$25, once, never renews):** either works. Cleanest is
+  Donovan paying on Nourkrin's company card with Darius refunding /
+  offsetting the amount Donovan already sent — it keeps the expense in
+  the right company's books. If Donovan would rather not, Darius can be
+  on a call while Donovan registers and enter his own card; harmless for
+  a one-off charge.
+  ⚠️ Google **declines prepaid and most virtual cards** — needs a standard
+  Visa/Mastercard/Amex.
+- **🔴 Apple (US$99 PER YEAR, recurring): MUST be Nourkrin's card.**
+  Never Darius's. If his card sits on a recurring annual charge for an
+  account he does not own, he is billed ~R1,800/yr indefinitely, and if
+  the card ever expires or the relationship ends, Nourkrin's app lapses
+  silently with nobody watching. Suggested to Darius: credit the Apple
+  portion back to Donovan and have him put his own card on that one.
+
+Whatever is agreed, keep it in writing on WhatsApp — in a year neither
+party will remember who paid what.
 - Both PDFs generated 2 Jul 2026, VNK Digital / Darius Builds branded. Banking
   details deliberately left as a placeholder in the PDF — Darius fills those in
   himself before sending (never stored in a repo).
