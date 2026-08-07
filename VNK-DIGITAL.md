@@ -117,7 +117,27 @@ vnkdigital.co.za nor the profile, and `vnkdigital.co.za` is blocked by the
 sandbox's egress proxy. That is a limitation of this environment, NOT
 evidence of an SEO problem — the profile is healthy. Don't re-raise it.)_
 
-### Getting the review link from the existing profile
+### ⭐ THE REVIEW LINK (reuse this for every client)
+```
+https://g.page/r/CTM3S9pmyy7-EBM/review
+```
+Retrieved 7 Aug 2026 and sent to Donovan the same morning. Opens the
+star-rating dialog directly.
+
+**This is a standing asset — send it to every client at handover.**
+`BUSINESS-PLAN.md` line 185 already says to ask at day 7, when the client
+is happiest. The link never changes, so it can go straight into a project
+handover template.
+
+⚠️ Do NOT substitute the profile's "Share" button link — that opens the
+profile page, where the visitor has to hunt for where to write. And the
+old `maps.app.goo.gl` shortener stopped working 25 Aug 2025, so don't
+reuse any shortened version.
+
+(Could not be verified from the build sandbox — `g.page` is egress-blocked
+here. Format matches Google's documented `g.page/r/<ID>/review` pattern.)
+
+### How it was obtained, if it ever needs re-fetching
 The Google My Business app is retired and business.google.com now only
 handles multi-location accounts — **a single-location profile is managed
 from inside Google Search.**
