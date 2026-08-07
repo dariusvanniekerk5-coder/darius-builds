@@ -260,6 +260,94 @@ quote lands, build in `index.html`:
   **dariusvanniekerk@icloud.com**. (Note: Donovan has the email saved
   wrongly as `icould.com` — worth correcting with him.)
 
+## 💰 MONTHLY CARE FEES — Nourkrin + Furbabies (worked out 2026-08-07)
+Darius asked what to charge monthly for managing the two live sites. This
+supersedes the July DocuSign drafts above (R950/mo template, R200/mo
+Furbabies) — **those numbers were made without checking the live rate
+card and both are wrong.** Keep the drafts for history; use these.
+
+### ⚠️ The mistake in the July drafts
+The R950/mo template note says _"there was NO existing retainer pricing
+on darius-builds site to reference"_. **There was.** VNK Digital already
+sells care plans at **Basic R500 / Standard R800 / Growth R1,500 per
+month** (`BUSINESS-PLAN.md`). R950 sits awkwardly between two published
+tiers and undercuts Growth Care while being non-standard — and R200 for
+Furbabies is **below his own published floor**. Rule going forward:
+**never invent a per-client monthly number. Put the client on a published
+tier.** It's less to remember and it can't contradict the website.
+
+### The distinction that actually matters (get this right or lose money)
+A care plan is **keeping it running**. It is NOT new features. Without
+that line drawn in writing, every "can you just quickly…" gets absorbed
+into the monthly fee forever.
+- **In the plan:** hosting and infrastructure, uptime, SSL, backups,
+  security and dependency updates, keeping Paystack / D1 / R2 / email
+  healthy, **bug fixes**, small text and image edits, Play Store
+  compliance upkeep.
+- **NOT in the plan, quoted separately:** new pages, new features, new
+  integrations, redesigns, the Apple app, anything with a spec.
+
+### 🐾 Furbabies — Basic Care, R500/month
+Single-page mobile site, dog grooming, WhatsApp link only, no backend, no
+database. That is exactly what **Basic Care (R500/mo)** is for. Real
+running cost is near zero, so the margin is fine.
+- **If R500/mo is a stretch for them** (it's ~R6,000/yr on a one-pager,
+  which is a fair objection), the fallback is **annual upfront: R2,940
+  for the year** — lands near Darius's own R200/mo instinct, but as an
+  annual discount rather than a published sub-floor monthly rate, and it
+  removes twelve chase-the-payment cycles. **Do not offer a bespoke
+  R200/mo monthly figure** — that becomes the number every future
+  one-pager client hears about.
+
+### 💊 Nourkrin — R2,950/month (this is the important one)
+**Nourkrin is not a website any more and must not be priced as one.**
+It is a live transactional platform: React SPA on Cloudflare Workers, D1
+database, R2 storage (progress photos + a 162MB video), **live Paystack
+one-off orders AND recurring subscriptions**, ZeptoMail transactional
+email, an admin approval workflow, a gated practitioner area, progress
+photo tracking, a provider finder, a PWA, and an Android app about to go
+into the Play Store. On the live rate card that is a Full Web App
+(R16,500+) *and* a PWA app (R19,500+) in one.
+
+The R950/mo template assumed **1 hour a month**. Actual demand in the
+last month alone: the approval-email bug, account deletion, app-store
+research, webinar hosting, the modules page, provider additions, doctor
+selection, forgot password, health-claims research. Nowhere near 1 hour.
+
+**Recommended: R2,950/month**, made of
+- **Partner Care — R2,450/mo**: Standard Care + **4 hrs dev/month**,
+  priority queue, quarterly improvements. `BUSINESS-PLAN.md` created this
+  tier specifically for _"the tier web-app and e-commerce clients should
+  land on"_. Nourkrin is its first customer. ⚠️ **It is not on the live
+  site yet — add it to vnkdigital.co.za so the price has public backing
+  before quoting it.**
+- **App Store Care — R450/mo**, starting only once the Android app is
+  actually live. This is real recurring work nobody has priced: the
+  annual target-API bump (there's a 31 Aug deadline every year), Play
+  policy changes, Data safety form updates, store listing changes and
+  re-uploads. Apple, if it ever happens, is separate again.
+- **Hours beyond the 4/month bill at R280/hr** — say this out loud when
+  agreeing it, not afterwards.
+
+**Anchor to use if Donovan pushes back:** a Shopify setup with the apps
+needed to come close would cost him more than this per month, and still
+couldn't do the practitioner approval area or the training modules.
+
+### Timing and how to raise it
+- **Nourkrin went live 3 Jul 2026.** By September that's two months of
+  unpaid open-ended support. **Start the plan 1 September 2026**, first
+  invoice end of August. Clean story: the build phase ends, the care
+  phase begins. Don't try to back-date — it reads as a surprise bill.
+- **Do NOT put this in the same message as the review/referral request.**
+  Donovan is warm right now and that's genuinely the right week to ask —
+  but mixing "please review us" with "here's a new monthly bill" damages
+  both. Separate messages, **different days**, review first.
+- **Get it in writing on WhatsApp**, same rule as the invoices above.
+- Donovan asked for English alongside Afrikaans — send both.
+
+**Status 2026-08-07: numbers recommended, NOT yet agreed with Darius and
+NOT sent to either client.** Nothing is committed until he confirms.
+
 ## ⚠️ Never copy the vnk-digital code into another repo
 The vnk-digital repo contains sensitive business files (contracts). A
 "bridge push" of its code into this or any other repo was suggested on
