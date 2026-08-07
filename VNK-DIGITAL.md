@@ -69,6 +69,84 @@ sent to anyone:
 Next step: once Darius approves wording/pricing, create the matching DocuSign
 templates/envelopes via the DocuSign MCP tools.
 
+## ⭐ Donovan offered to review + refer VNK Digital — 7 Aug 2026
+**This is the first real client testimonial.** Donovan Visagie (Nourkrin SA)
+messaged unprompted: _"Stuur my n link om julle te review en aan mense te
+stuur"_ — he wants (a) to publicly review VNK Digital as a company and
+(b) something to forward to others so they hire Darius.
+
+### ✅ The plan (7 Aug 2026) — Google profile ALREADY EXISTS
+**Darius confirmed he already has a Google Business Profile with 3
+reviews on it.** The research below had assumed one needed creating and
+verifying (~1 week) — **that assumption was wrong and the whole delay is
+moot.** Donovan can review immediately.
+1. **Get the review link** (see next section) — 2 minutes.
+2. **Send it to Donovan today**, together with a request to reuse his
+   words on the site. One action for Donovan, two uses for Darius.
+3. **Send the forwardable referral blurb as its OWN WhatsApp message** so
+   he can forward it untouched.
+
+### 🚨 Never link the review to money
+**R27,500 was outstanding** (R13,500 website + R14,000 app, as at 2 Jul
+2026 — confirm current figure). **No discount, write-off, or "as a thank
+you" may ever be attached to this review.** Two reasons: Google's April
+2026 policy bans incentivised reviews and removes them silently, and it
+would foul the payment relationship. Keep review and money as entirely
+separate conversations. Same for the partnership idea floated 21 Jul —
+keep it off this thread.
+
+### Getting the review link from the existing profile
+The Google My Business app is retired and business.google.com now only
+handles multi-location accounts — **a single-location profile is managed
+from inside Google Search.**
+1. Sign into Google with the account that owns the profile.
+2. Search the exact business name, or just **"my business"**.
+3. In the profile panel: **Read Reviews → Get more reviews → Copy**.
+4. Result looks like `https://g.page/r/<ID>/review`. **Test it in a
+   private/incognito window before sending** — it must open the star
+   dialog straight away.
+
+Fallback if that path isn't visible: find the Place ID via Google's Place
+ID Finder (starts with `ChIJ`) and build
+`https://search.google.com/local/writereview?placeid=<PLACE_ID>`.
+
+⚠️ The old `maps.app.goo.gl` shortener stopped working 25 Aug 2025 — don't
+reuse any old shortened link.
+
+**Google only.** Ignore Trustpilot, Hellopeter, Facebook and paid
+directories. A LinkedIn recommendation is the one worthwhile second
+placement *if* Darius already has an active profile and Donovan is a
+connection — don't create one just for this.
+
+### Website build — NOT YET
+Nothing gets built until Donovan's real words arrive. `CLAUDE.md` forbids
+inventing client quotes, and a placeholder risks going live. When the
+quote lands, build in `index.html`:
+- New `<section id="testimonials">` between `#about` and `#contact`, no
+  background override — this also fixes the broken dark/black alternation
+  (`#about` and `#contact` are currently both `var(--dark)` and butt
+  together). Add a "Reviews" item to `.nav-links`.
+- Clone the house pattern exactly: `div.section-label` eyebrow → `h2.section-title`
+  → `p.section-sub` → `div.testimonial-grid`. `.testimonial-card` mirrors
+  `.service-card` (background `var(--card)`, 1px `var(--border)`, radius
+  12px, padding 32px, hover → `var(--yellow)` + `translateY(-2px)`).
+  **No box-shadow** — there are zero in the file.
+- Credibility requires: full name, role, "Nourkrin South Africa", an
+  outbound link to nourkrinsa.co.za, and later a link to the same review
+  on Google. Use his own nouns and numbers; never rewrite into adjectives.
+- Also worth more than the review at these price points: a **Nourkrin case
+  study**. Scope/timeline are fine to publish; **fees and revenue figures
+  need Donovan's explicit yes.**
+
+### Other open questions
+- Is `darius-builds` deployed anywhere public? No CNAME, netlify.toml,
+  wrangler config or GitHub workflow exists in the repo, and index.html
+  references no URL of its own. If it isn't live, vnkdigital.co.za has to
+  carry the case study.
+- Confirmed real contact details in `index.html`: **072 080 9288**,
+  **dariusvanniekerk@icloud.com**. (Note: Donovan has the email saved
+  wrongly as `icould.com` — worth correcting with him.)
+
 ## ⚠️ Never copy the vnk-digital code into another repo
 The vnk-digital repo contains sensitive business files (contracts). A
 "bridge push" of its code into this or any other repo was suggested on
