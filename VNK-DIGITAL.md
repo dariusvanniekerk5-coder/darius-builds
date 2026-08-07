@@ -95,6 +95,28 @@ would foul the payment relationship. Keep review and money as entirely
 separate conversations. Same for the partnership idea floated 21 Jul —
 keep it off this thread.
 
+### ✅ Google Business Profile — CONFIRMED LIVE (screenshot, 7 Aug 2026)
+- **Name:** VNK Digital · **Category:** Website designer · **Status:** Open
+- **Verified** — "You manage this Business Profile"
+- **Rating: 5.0 ★ from 3 reviews**, 6 customer interactions
+- Action buttons live: Call, Website, WhatsApp, Share
+- Tabs populated: Overview, Services, Photos, Reviews, About; a "What we
+  build" product post is up (Websites, Online Stores, Web Apps, Chatbots)
+- Managed from **Google Search** (the My Business app is retired)
+
+⚠️ **Name collision — a UK company also trades as "VNK Digital"**
+(`vnkdigital.com`, luxury website design for beauty brands, Vanessa Udy).
+It appears directly above Darius's own listing in his search results.
+Different country and market, so likely not a legal problem, but anyone
+Googling "VNK Digital" cold may land on them. Worth keeping in mind for
+branding and for anything sent to prospects — always give the full
+`vnkdigital.co.za`, never just the company name.
+
+_(Note: a US-only web search from the build sandbox found neither
+vnkdigital.co.za nor the profile, and `vnkdigital.co.za` is blocked by the
+sandbox's egress proxy. That is a limitation of this environment, NOT
+evidence of an SEO problem — the profile is healthy. Don't re-raise it.)_
+
 ### Getting the review link from the existing profile
 The Google My Business app is retired and business.google.com now only
 handles multi-location accounts — **a single-location profile is managed
