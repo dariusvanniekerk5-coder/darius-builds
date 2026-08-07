@@ -39,10 +39,14 @@ session's repository scope). That is the ONLY approved way.
 Nourkrin's own product/Paystack paperwork, which lives only in the nourkrin-sa
 repo — see that repo's PROJECT-STATUS.md for the Paystack sample invoice,
 which is a different, unrelated document about product sales):
-- **INV-VNK-2026-001 — Website:** R27 000 total &middot; R13 500 paid &middot;
-  **R13 500 balance due**.
-- **INV-VNK-2026-002 — App (PWA):** R19 000 total &middot; R5 000 deposit paid
-  &middot; **R14 000 balance due**, in 3 instalments (R5 000 / R5 000 / R4 000).
+- **INV-VNK-2026-001 — Website:** R27 000 total.
+- **INV-VNK-2026-002 — App (PWA):** R19 000 total, originally R5 000
+  deposit + R14 000 in 3 instalments (R5 000 / R5 000 / R4 000).
+- 💰 **Payment update (7 Aug 2026):** Darius confirmed Donovan has since
+  paid. The 2 Jul balances above are historical and no longer current.
+  ⚠️ **The exact current balance was not stated and is NOT recorded here** —
+  if a future session needs the figure, ask Darius rather than assuming
+  either that it is fully settled or that anything is still owed.
 - Both PDFs generated 2 Jul 2026, VNK Digital / Darius Builds branded. Banking
   details deliberately left as a placeholder in the PDF — Darius fills those in
   himself before sending (never stored in a repo).
@@ -86,14 +90,15 @@ moot.** Donovan can review immediately.
 3. **Send the forwardable referral blurb as its OWN WhatsApp message** so
    he can forward it untouched.
 
-### 🚨 Never link the review to money
-**R27,500 was outstanding** (R13,500 website + R14,000 app, as at 2 Jul
-2026 — confirm current figure). **No discount, write-off, or "as a thank
-you" may ever be attached to this review.** Two reasons: Google's April
-2026 policy bans incentivised reviews and removes them silently, and it
-would foul the payment relationship. Keep review and money as entirely
-separate conversations. Same for the partnership idea floated 21 Jul —
-keep it off this thread.
+### 🚨 Never offer anything in exchange for the review
+**No discount, free work, referral commission, or "as a thank you" may
+ever be attached to a review request.** Google's April 2026 policy bans
+incentivised reviews and removes them **silently** — no notification, the
+review just vanishes. A referral commission on its own is perfectly
+legitimate; it is the *pairing* with a review ask that is toxic. If a
+referral arrangement is ever offered, send it as a separate message on a
+separate day. Same for the partnership idea Donovan floated 21 Jul — keep
+it off the review thread.
 
 ### ✅ Google Business Profile — CONFIRMED LIVE (screenshot, 7 Aug 2026)
 - **Name:** VNK Digital · **Category:** Website designer · **Status:** Open
@@ -116,6 +121,38 @@ _(Note: a US-only web search from the build sandbox found neither
 vnkdigital.co.za nor the profile, and `vnkdigital.co.za` is blocked by the
 sandbox's egress proxy. That is a limitation of this environment, NOT
 evidence of an SEO problem — the profile is healthy. Don't re-raise it.)_
+
+### 📨 The forwardable referral blurb (reusable — both languages)
+Sent to Donovan 7 Aug 2026; he asked for an English version too, so he
+could forward it to contacts either way. **This is a standing asset — hand
+it to any client who offers to refer work.**
+
+**Afrikaans:**
+```
+VNK Digital bou webwerwe, aanlynwinkels en apps vir besighede in SA.
+Vinnig, en sonder agentskap-pryse.
+
+Hulle het my Nourkrin-webwerf en -app gebou, kyk gerus: nourkrinsa.co.za
+
+Meer inligting: vnkdigital.co.za
+Darius van Niekerk - 072 080 9288
+```
+
+**English:**
+```
+VNK Digital builds websites, online stores and apps for South African
+businesses — fast, and without agency prices.
+
+They built my Nourkrin website and app. Have a look: nourkrinsa.co.za
+
+More info: vnkdigital.co.za
+Darius van Niekerk — 072 080 9288
+```
+
+Send it as its **own WhatsApp message**, separate from anything else —
+WhatsApp forwards whole messages, so it must stand alone to be
+forwardable untouched. Swap the client-specific line ("my Nourkrin
+website and app") for whichever client is doing the referring.
 
 ### ⭐ THE REVIEW LINK (reuse this for every client)
 ```
