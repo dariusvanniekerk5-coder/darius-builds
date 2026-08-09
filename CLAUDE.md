@@ -36,9 +36,23 @@ Darius van Niekerk — founder of VNK Digital (Johannesburg web studio). He has 
   **confirm whether it is actually deployed anywhere before assuming.** If it
   isn't live, vnkdigital.co.za has to carry the case study.
 
-**The static-site Agent Skills apply here as written** — `pre-deploy-check`,
+**The static-site Agent Skills mostly apply here** — `pre-deploy-check`,
 `static-site-security`, `accessibility-seo-audit`, `form-hardening`,
-`cloudflare-pages-deploy`, `client-site-handover`, `minimal-diff-debug`.
+`client-site-handover`, `minimal-diff-debug`.
+
+⚠️ **Except `cloudflare-pages-deploy`** — an earlier version of this note said
+it applies "as written". It does not, because **this repo has no evidenced
+deploy target at all** (no CNAME, no netlify.toml, no wrangler config, no
+workflow). Confirm where, or whether, this is deployed before following any
+deploy skill. And note its "drag the ENTIRE folder" rule would publish
+`BUSINESS-PLAN.md` and `VNK-DIGITAL.md` — the full business plan, client
+pricing and contract notes — to a public URL. **Never run it against a repo
+root that holds business documents.**
+
+**Real defects an audit found here (7 Aug 2026), still open:** no favicon at
+all; heading levels skip h2→h4 repeatedly; and no `prefers-reduced-motion`
+guard on the CSS animations — which matters given the standing no-flashing
+rule above.
 
 ⚠️ **They do NOT apply as written to `nourkrin-sa`**, which is a React + Vite
 SPA on Cloudflare Workers with a real build step. That repo's CLAUDE.md spells
