@@ -300,6 +300,17 @@ running cost is near zero, so the margin is fine.
   one-pager client hears about.
 
 ### 💊 Nourkrin — R2,950/month (this is the important one)
+
+> ⛔ **DO NOT QUOTE THIS FIGURE TO DONOVAN WITHOUT CHECKING WITH DARIUS FIRST**
+> (flag added 2026-08-11). `VNK-Clients\CLIENTS-STATUS.md` records
+> **"R2,000/month care once live"** as the deal already discussed with Donovan.
+> The R2,950 below is VNK's internal *valuation* of the work — the reasoning is
+> sound, but going from R2,000 to R2,950 is a **renegotiation with an existing
+> client**, not a price lookup, and Donovan is also the Furbabies client and a
+> referral source. Darius decides whether to hold R2,000, phase up, or re-quote.
+> Whichever he chooses, update BOTH this file and CLIENTS-STATUS.md the same day
+> so they stop disagreeing.
+
 **Nourkrin is not a website any more and must not be priced as one.**
 It is a live transactional platform: React SPA on Cloudflare Workers, D1
 database, R2 storage (progress photos + a 162MB video), **live Paystack
