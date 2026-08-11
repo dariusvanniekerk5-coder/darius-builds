@@ -39,10 +39,48 @@ session's repository scope). That is the ONLY approved way.
 Nourkrin's own product/Paystack paperwork, which lives only in the nourkrin-sa
 repo — see that repo's PROJECT-STATUS.md for the Paystack sample invoice,
 which is a different, unrelated document about product sales):
-- **INV-VNK-2026-001 — Website:** R27 000 total &middot; R13 500 paid &middot;
-  **R13 500 balance due**.
-- **INV-VNK-2026-002 — App (PWA):** R19 000 total &middot; R5 000 deposit paid
-  &middot; **R14 000 balance due**, in 3 instalments (R5 000 / R5 000 / R4 000).
+- **INV-VNK-2026-001 — Website:** R27 000 total.
+- **INV-VNK-2026-002 — App (PWA):** R19 000 total, originally R5 000
+  deposit + R14 000 in 3 instalments (R5 000 / R5 000 / R4 000).
+- ⚠️ **The 2 Jul balances above are historical — do NOT quote them as
+  current.** They were correct on 2 Jul 2026 and have not been tracked
+  since. Ask Darius for the live position rather than assuming.
+- 💰 **App-store fees are already covered (7 Aug 2026):** Darius confirmed
+  Donovan has **already paid him for the app-store subscriptions** — i.e.
+  the Google Play US$25 and the Apple US$99/yr are funded, not something
+  to chase Donovan for again. This matches the standing arrangement in
+  BUSINESS-PLAN.md: app-store accounts, Zoom and printing go in the
+  client's name and are billed to them, so Darius never fronts running
+  costs.
+  ⚠️ **But funding is NOT the same as account ownership.** Google and
+  Apple both tie ownership to whoever *registers* the account, so the
+  Play Console and Apple Developer accounts must still be created from
+  **Donovan's** side, in Nourkrin's name, with Darius added as Admin
+  afterwards. Do not let "he's already paid" become a reason for Darius
+  to register them himself — that creates a formal ownership transfer
+  later.
+
+#### 💳 Whose card actually pays (decided 7 Aug 2026)
+The card used does **not** affect ownership — only the Google/Apple
+account that registers does. But the two stores differ in what matters:
+
+- **Google (US$25, once, never renews):** either works. Cleanest is
+  Donovan paying on Nourkrin's company card with Darius refunding /
+  offsetting the amount Donovan already sent — it keeps the expense in
+  the right company's books. If Donovan would rather not, Darius can be
+  on a call while Donovan registers and enter his own card; harmless for
+  a one-off charge.
+  ⚠️ Google **declines prepaid and most virtual cards** — needs a standard
+  Visa/Mastercard/Amex.
+- **🔴 Apple (US$99 PER YEAR, recurring): MUST be Nourkrin's card.**
+  Never Darius's. If his card sits on a recurring annual charge for an
+  account he does not own, he is billed ~R1,800/yr indefinitely, and if
+  the card ever expires or the relationship ends, Nourkrin's app lapses
+  silently with nobody watching. Suggested to Darius: credit the Apple
+  portion back to Donovan and have him put his own card on that one.
+
+Whatever is agreed, keep it in writing on WhatsApp — in a year neither
+party will remember who paid what.
 - Both PDFs generated 2 Jul 2026, VNK Digital / Darius Builds branded. Banking
   details deliberately left as a placeholder in the PDF — Darius fills those in
   himself before sending (never stored in a repo).
@@ -86,14 +124,15 @@ moot.** Donovan can review immediately.
 3. **Send the forwardable referral blurb as its OWN WhatsApp message** so
    he can forward it untouched.
 
-### 🚨 Never link the review to money
-**R27,500 was outstanding** (R13,500 website + R14,000 app, as at 2 Jul
-2026 — confirm current figure). **No discount, write-off, or "as a thank
-you" may ever be attached to this review.** Two reasons: Google's April
-2026 policy bans incentivised reviews and removes them silently, and it
-would foul the payment relationship. Keep review and money as entirely
-separate conversations. Same for the partnership idea floated 21 Jul —
-keep it off this thread.
+### 🚨 Never offer anything in exchange for the review
+**No discount, free work, referral commission, or "as a thank you" may
+ever be attached to a review request.** Google's April 2026 policy bans
+incentivised reviews and removes them **silently** — no notification, the
+review just vanishes. A referral commission on its own is perfectly
+legitimate; it is the *pairing* with a review ask that is toxic. If a
+referral arrangement is ever offered, send it as a separate message on a
+separate day. Same for the partnership idea Donovan floated 21 Jul — keep
+it off the review thread.
 
 ### ✅ Google Business Profile — CONFIRMED LIVE (screenshot, 7 Aug 2026)
 - **Name:** VNK Digital · **Category:** Website designer · **Status:** Open
@@ -116,6 +155,38 @@ _(Note: a US-only web search from the build sandbox found neither
 vnkdigital.co.za nor the profile, and `vnkdigital.co.za` is blocked by the
 sandbox's egress proxy. That is a limitation of this environment, NOT
 evidence of an SEO problem — the profile is healthy. Don't re-raise it.)_
+
+### 📨 The forwardable referral blurb (reusable — both languages)
+Sent to Donovan 7 Aug 2026; he asked for an English version too, so he
+could forward it to contacts either way. **This is a standing asset — hand
+it to any client who offers to refer work.**
+
+**Afrikaans:**
+```
+VNK Digital bou webwerwe, aanlynwinkels en apps vir besighede in SA.
+Vinnig, en sonder agentskap-pryse.
+
+Hulle het my Nourkrin-webwerf en -app gebou, kyk gerus: nourkrinsa.co.za
+
+Meer inligting: vnkdigital.co.za
+Darius van Niekerk - 072 080 9288
+```
+
+**English:**
+```
+VNK Digital builds websites, online stores and apps for South African
+businesses — fast, and without agency prices.
+
+They built my Nourkrin website and app. Have a look: nourkrinsa.co.za
+
+More info: vnkdigital.co.za
+Darius van Niekerk — 072 080 9288
+```
+
+Send it as its **own WhatsApp message**, separate from anything else —
+WhatsApp forwards whole messages, so it must stand alone to be
+forwardable untouched. Swap the client-specific line ("my Nourkrin
+website and app") for whichever client is doing the referring.
 
 ### ⭐ THE REVIEW LINK (reuse this for every client)
 ```
@@ -188,6 +259,94 @@ quote lands, build in `index.html`:
 - Confirmed real contact details in `index.html`: **072 080 9288**,
   **dariusvanniekerk@icloud.com**. (Note: Donovan has the email saved
   wrongly as `icould.com` — worth correcting with him.)
+
+## 💰 MONTHLY CARE FEES — Nourkrin + Furbabies (worked out 2026-08-07)
+Darius asked what to charge monthly for managing the two live sites. This
+supersedes the July DocuSign drafts above (R950/mo template, R200/mo
+Furbabies) — **those numbers were made without checking the live rate
+card and both are wrong.** Keep the drafts for history; use these.
+
+### ⚠️ The mistake in the July drafts
+The R950/mo template note says _"there was NO existing retainer pricing
+on darius-builds site to reference"_. **There was.** VNK Digital already
+sells care plans at **Basic R500 / Standard R800 / Growth R1,500 per
+month** (`BUSINESS-PLAN.md`). R950 sits awkwardly between two published
+tiers and undercuts Growth Care while being non-standard — and R200 for
+Furbabies is **below his own published floor**. Rule going forward:
+**never invent a per-client monthly number. Put the client on a published
+tier.** It's less to remember and it can't contradict the website.
+
+### The distinction that actually matters (get this right or lose money)
+A care plan is **keeping it running**. It is NOT new features. Without
+that line drawn in writing, every "can you just quickly…" gets absorbed
+into the monthly fee forever.
+- **In the plan:** hosting and infrastructure, uptime, SSL, backups,
+  security and dependency updates, keeping Paystack / D1 / R2 / email
+  healthy, **bug fixes**, small text and image edits, Play Store
+  compliance upkeep.
+- **NOT in the plan, quoted separately:** new pages, new features, new
+  integrations, redesigns, the Apple app, anything with a spec.
+
+### 🐾 Furbabies — Basic Care, R500/month
+Single-page mobile site, dog grooming, WhatsApp link only, no backend, no
+database. That is exactly what **Basic Care (R500/mo)** is for. Real
+running cost is near zero, so the margin is fine.
+- **If R500/mo is a stretch for them** (it's ~R6,000/yr on a one-pager,
+  which is a fair objection), the fallback is **annual upfront: R2,940
+  for the year** — lands near Darius's own R200/mo instinct, but as an
+  annual discount rather than a published sub-floor monthly rate, and it
+  removes twelve chase-the-payment cycles. **Do not offer a bespoke
+  R200/mo monthly figure** — that becomes the number every future
+  one-pager client hears about.
+
+### 💊 Nourkrin — R2,950/month (this is the important one)
+**Nourkrin is not a website any more and must not be priced as one.**
+It is a live transactional platform: React SPA on Cloudflare Workers, D1
+database, R2 storage (progress photos + a 162MB video), **live Paystack
+one-off orders AND recurring subscriptions**, ZeptoMail transactional
+email, an admin approval workflow, a gated practitioner area, progress
+photo tracking, a provider finder, a PWA, and an Android app about to go
+into the Play Store. On the live rate card that is a Full Web App
+(R16,500+) *and* a PWA app (R19,500+) in one.
+
+The R950/mo template assumed **1 hour a month**. Actual demand in the
+last month alone: the approval-email bug, account deletion, app-store
+research, webinar hosting, the modules page, provider additions, doctor
+selection, forgot password, health-claims research. Nowhere near 1 hour.
+
+**Recommended: R2,950/month**, made of
+- **Partner Care — R2,450/mo**: Standard Care + **4 hrs dev/month**,
+  priority queue, quarterly improvements. `BUSINESS-PLAN.md` created this
+  tier specifically for _"the tier web-app and e-commerce clients should
+  land on"_. Nourkrin is its first customer. ⚠️ **It is not on the live
+  site yet — add it to vnkdigital.co.za so the price has public backing
+  before quoting it.**
+- **App Store Care — R450/mo**, starting only once the Android app is
+  actually live. This is real recurring work nobody has priced: the
+  annual target-API bump (there's a 31 Aug deadline every year), Play
+  policy changes, Data safety form updates, store listing changes and
+  re-uploads. Apple, if it ever happens, is separate again.
+- **Hours beyond the 4/month bill at R280/hr** — say this out loud when
+  agreeing it, not afterwards.
+
+**Anchor to use if Donovan pushes back:** a Shopify setup with the apps
+needed to come close would cost him more than this per month, and still
+couldn't do the practitioner approval area or the training modules.
+
+### Timing and how to raise it
+- **Nourkrin went live 3 Jul 2026.** By September that's two months of
+  unpaid open-ended support. **Start the plan 1 September 2026**, first
+  invoice end of August. Clean story: the build phase ends, the care
+  phase begins. Don't try to back-date — it reads as a surprise bill.
+- **Do NOT put this in the same message as the review/referral request.**
+  Donovan is warm right now and that's genuinely the right week to ask —
+  but mixing "please review us" with "here's a new monthly bill" damages
+  both. Separate messages, **different days**, review first.
+- **Get it in writing on WhatsApp**, same rule as the invoices above.
+- Donovan asked for English alongside Afrikaans — send both.
+
+**Status 2026-08-07: numbers recommended, NOT yet agreed with Darius and
+NOT sent to either client.** Nothing is committed until he confirms.
 
 ## ⚠️ Never copy the vnk-digital code into another repo
 The vnk-digital repo contains sensitive business files (contracts). A
