@@ -260,6 +260,69 @@ quote lands, build in `index.html`:
   **dariusvanniekerk@icloud.com**. (Note: Donovan has the email saved
   wrongly as `icould.com` — worth correcting with him.)
 
+## 🧾 CARE-PLAN BILLING CYCLE — LIVE, first invoices sent 18 Aug 2026
+
+**Both care plans are now invoiced and running.** Sent to Donovan on
+18 August 2026; he agreed to pay both the same day.
+
+| Invoice | Client | Amount | Period |
+|---|---|---|---|
+| `INV-VNK-2026-003` | Nourkrin SA — nourkrinsa.co.za | **R2 000.00 / month** | 25 Aug – 24 Sep 2026 |
+| `INV-VNK-2026-004` | Furbabies | **R300.00 / month** | 25 Aug – 24 Sep 2026 |
+
+Numbering continues the July series (`-001` website build, `-002` app build).
+**Next: `-005` and `-006`.**
+
+### The cycle, as agreed in writing on the invoices
+
+- **First payment: 18 August 2026** — the invoices state "As agreed, this first
+  invoice is payable today, 18 August 2026."
+- **Thereafter: due on the 25th of each month**, for the month beginning that
+  day. So 25 Sep covers 25 Sep – 24 Oct, and so on.
+- **Issue date: the 18th of each month** — a week's notice before the money is
+  due. 📅 **Next issue date: Friday 18 September 2026.**
+
+### What is on the invoices
+
+- **No VAT line.** Removed at Darius's instruction 18 Aug 2026. If VNK Digital
+  registers for VAT later this has to be revisited.
+- **Banking: Capitec, in Darius's personal name** (savings account). Donovan
+  has been paying into it all along. ⚠️ Note the payee name does not match the
+  "VNK Digital" letterhead — fine in practice, but a bookkeeper could query it.
+  Account details are **not stored in this repo**, per the standing rule; they
+  live only in the generated PDFs.
+- **A scope paragraph**, which is the commercially useful part: new pages,
+  features, integrations and redesigns are quoted separately, and **third-party
+  running costs — domain renewal, email sending credit, payment gateway fees,
+  app store accounts — are billed to the client directly**, with VNK Digital
+  managing them as part of the fee. That settles the ZeptoMail-credit question
+  in writing without a separate negotiation.
+- Deliberately **left off**: Darius's ID number and residential address, both
+  of which appeared on the Capitec proof-of-account. A client needs to pay him,
+  not identify him.
+
+### ⚠️ Furbabies is below the published floor
+
+R300/mo sits under the published **Basic Care R500/mo**. Darius had already
+agreed it with the client before the invoice was drawn, so it was issued as
+agreed. The warning further down this file still stands: do not let a bespoke
+sub-floor monthly figure become the reference price for future one-pagers. The
+annual-upfront route (R2 940/yr) is the way to discount without publishing a
+low monthly rate — **worth revisiting at renewal.**
+
+### 🔴 Client entity details, for future invoices
+
+Recorded elsewhere in the nourkrin-sa repo and worth having here:
+**NOURKRIN SA (PTY) LTD**, reg **2026/251601/07**, registered office
+31 Beau Rivage, 34 Willow Avenue, Fourways, Gauteng 2191, director Donovan
+Visagie. The 18 Aug invoices show only "Nourkrin South Africa / Attn: Donovan
+Visagie"; use the full registered details if a formal invoice is ever needed.
+
+**Furbabies' registered entity is NOT recorded anywhere.** Ask before issuing
+anything formal for it.
+
+---
+
 ## 💰 MONTHLY CARE FEES — Nourkrin + Furbabies (worked out 2026-08-07)
 Darius asked what to charge monthly for managing the two live sites. This
 supersedes the July DocuSign drafts above (R950/mo template, R200/mo
