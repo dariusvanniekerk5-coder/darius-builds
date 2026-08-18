@@ -271,7 +271,19 @@ quote lands, build in `index.html`:
 | `INV-VNK-2026-004` | Furbabies | **R300.00 / month** | 25 Aug – 24 Sep 2026 |
 
 Numbering continues the July series (`-001` website build, `-002` app build).
-**Next: `-005` and `-006`.**
+
+🔴 **CORRECTED 18 Aug 2026 — this previously said "Next: `-005` and `-006`".
+That is now wrong.** `INV-VNK-2026-005` was issued the same day for the
+**R20,500 already paid** by Donovan (signed agreement 14 July 2026; R10,000 app
++ R6,000 Zoom/webinars + R1,500 chatbot + R3,000 app store). Marked PAID IN
+FULL, amount due R0.00, no banking details.
+
+**Next care-plan invoices are therefore `-006` and `-007`**, issued
+📅 **Friday 18 September 2026**. Do not reuse `-005`.
+
+⚠️ The generated PDFs for `-003`, `-004` and `-005` lived only in the session
+scratchpad and are **gone with the container**. They were sent to Darius
+directly. Regenerate if needed — banking details stay out of the repo.
 
 ### The cycle, as agreed in writing on the invoices
 
