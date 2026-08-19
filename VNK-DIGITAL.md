@@ -393,6 +393,21 @@ opening a renegotiation.
 | `INV-VNK-2026-003` | Nourkrin SA — nourkrinsa.co.za | **R2 000.00 / month** | 25 Aug – 24 Sep 2026 |
 | `INV-VNK-2026-004` | Furbabies | **R300.00 / month** | 25 Aug – 24 Sep 2026 |
 
+### 🔄 UPDATED 19 Aug 2026 — Furbabies reissued at R500, Nourkrin cancelled
+
+| Invoice | Status |
+|---|---|
+| `INV-VNK-2026-003` Nourkrin R2 000 | ❌ **CANCELLED.** 3 free months honoured — nothing payable until 3 Oct 2026, then **R1 900/mo** (the rate actually quoted). |
+| `INV-VNK-2026-004` Furbabies R300 | ❌ **REPLACED** by `-006`. |
+| `INV-VNK-2026-006` Furbabies **R500** | ✅ Issued 19 Aug, period 19 Aug – 18 Sep 2026. Donovan cancelled the plan, so the R300 favour rate — given for an ongoing arrangement — no longer applies and the final period bills at the published Basic Care rate. **Final invoice; nothing after it.** |
+
+**Next free number: `-007`** (first Nourkrin care invoice, due 3 October 2026 at
+R1 900). ⚠️ `-005` and `-006` are both used.
+
+Service terms covering all of this were issued to Donovan on 19 Aug 2026 and are
+committed at `nourkrin-sa/legal/service-terms-FOR-DONOVAN.pdf`, generator
+included — deliberately, so it cannot vanish the way the July breakdown did.
+
 Numbering continues the July series (`-001` website build, `-002` app build).
 
 🔴 **CORRECTED 18 Aug 2026 — this previously said "Next: `-005` and `-006`".
