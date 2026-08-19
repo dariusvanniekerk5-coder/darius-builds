@@ -460,6 +460,38 @@ sub-floor monthly figure become the reference price for future one-pagers. The
 annual-upfront route (R2 940/yr) is the way to discount without publishing a
 low monthly rate — **worth revisiting at renewal.**
 
+### 📋 What the live site promises with EVERY care plan (verified 19 Aug 2026)
+
+From `vnkdigital.co.za`, the "Every care plan includes" panel — these are
+published commitments on every tier, including Furbabies' R500 Basic Care:
+
+- Regular backups, with tested restores
+- Software, plugin & security updates
+- **Domain-renewal management**
+- Content updates & small changes
+- Contact form & broken-link checks
+- Speed & performance checks
+- **A monthly report on what we did**
+
+⚠️ **The monthly report is the one to check.** It is published as included on
+every plan. If reports are not actually being sent, that is a promise on the
+live site that is not being kept, and a client could reasonably point at it.
+Either start sending a short monthly note, or take the line off the site.
+
+### 🎯 Where each client should sit against the published tiers
+
+| Client | Charged | Published tier | Match? |
+|---|---|---|---|
+| Furbabies | **R500/mo** | Basic Care R500 | ✅ **Exact.** Backed by the public rate card. |
+| Nourkrin | **R1,900/mo** | *(between Growth R1,500 and Partner R2,450)* | ⚠️ **No tier.** |
+
+**Nourkrin belongs on Partner Care.** The site itself says that tier is for
+web-app and e-commerce clients, which is precisely what Nourkrin is. R1,900 was
+quoted in writing in July and must be honoured, but it repeats the exact mistake
+this file already warns about: _"never invent a per-client monthly number. Put
+the client on a published tier."_ 📌 **At renewal, move Nourkrin to Partner Care
+at R2,450** — the price now has public backing and needs no argument.
+
 ### 🔴 Client entity details, for future invoices
 
 Recorded elsewhere in the nourkrin-sa repo and worth having here:
@@ -542,9 +574,15 @@ selection, forgot password, health-claims research. Nowhere near 1 hour.
 - **Partner Care — R2,450/mo**: Standard Care + **4 hrs dev/month**,
   priority queue, quarterly improvements. `BUSINESS-PLAN.md` created this
   tier specifically for _"the tier web-app and e-commerce clients should
-  land on"_. Nourkrin is its first customer. ⚠️ **It is not on the live
-  site yet — add it to vnkdigital.co.za so the price has public backing
-  before quoting it.**
+  land on"_. Nourkrin is its first customer.
+
+  ✅ **CORRECTED 19 Aug 2026 — it IS on the live site.** This previously said
+  "not on the live site yet, add it to vnkdigital.co.za". **That is out of
+  date.** Verified from a browser screenshot of `vnkdigital.co.za`: all four
+  tiers are published — **Basic from R500/mo, Standard from R800/mo, Growth
+  from R1,500/mo, Partner from R2,450/mo** — with Partner Care described on the
+  site as _"The right fit for web-app and e-commerce clients."_ The price has
+  public backing already.
 - **App Store Care — R450/mo**, starting only once the Android app is
   actually live. This is real recurring work nobody has priced: the
   annual target-API bump (there's a 31 Aug deadline every year), Play
