@@ -294,7 +294,43 @@ issued for **25 Aug – 24 Sep 2026**, squarely inside a period already given aw
 for concessions, free periods and discounts promised to that client.** A rate is
 not a price until the concessions are subtracted from it.
 
-### The rate at the time — R2,450, not R2,000
+### 🔴 THE ACTUAL QUOTE WAS R1,900/mo — found 19 Aug 2026 from the original WhatsApp
+
+**Everything below this heading was superseded within hours of being written.**
+Darius found his own original WhatsApp to Donovan (July 2026, sent 10:08) and it
+states the care terms in his own words:
+
+> _"Om die website aan die gang te hou deur dit daagliks te monitor en seker maak
+> als is ok en dat daar nie enige bugs en goed is wat jou website en App kan
+> opneuk vra ek so om en by **R1900pm** maar ek sal **3 maande gratis** doen om
+> ook dankie te sê dat ek jou website as n voorbeeld gebruik vir toekomstige
+> werk."_
+
+**What this settles:**
+
+| Item | Truth |
+|---|---|
+| Care rate quoted to Donovan | **R1,900/mo** — in writing |
+| 3 months free | ✅ **Confirmed in Darius's own words.** Not disputable. |
+| Why it was given | In exchange for **using the site as a portfolio example** — Donovan gave consideration for it |
+| Value of the gift | **3 × R1,900 = R5,700** — NOT the ~R7,350 recorded below |
+
+⚠️ **`INV-VNK-2026-003` was issued at R2,000 — R100/month ABOVE the written
+quote.** The R2,450 "normal rate" mentioned to Donovan on 19 Aug is his standard
+Partner Care tier, but it is **not what this client was quoted**, and the client
+keeps and re-reads his messages.
+
+📌 **Recommended position: honour R1,900.** It is what was written, the gap to
+the invoice is R100/mo, and the credibility cost of arguing exceeds the money.
+The scope has genuinely outgrown R1,900 — live Paystack orders and
+subscriptions, D1, R2 photo storage, practitioner gating, PWA, Play Store — but
+that is a **renewal conversation**, raised forward, never retroactively.
+
+⚠️ **Also promised in that same message, and not yet verified as delivered:**
+business cards, A6 flyers and thank-you cards, stated as included in the
+R16,000. The repo only ever records these as *mockups*.
+
+### (Superseded) The rate as previously recorded — R2,450, not R2,000
 
 | Figure | What it actually is |
 |---|---|
