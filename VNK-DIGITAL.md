@@ -399,10 +399,31 @@ opening a renegotiation.
 |---|---|
 | `INV-VNK-2026-003` Nourkrin R2 000 | ❌ **CANCELLED.** 3 free months honoured — nothing payable until 3 Oct 2026, then **R1 900/mo** (the rate actually quoted). |
 | `INV-VNK-2026-004` Furbabies R300 | ❌ **REPLACED** by `-006`. |
-| `INV-VNK-2026-006` Furbabies **R500** | ✅ Issued 19 Aug, period 19 Aug – 18 Sep 2026. Donovan cancelled the plan, so the R300 favour rate — given for an ongoing arrangement — no longer applies and the final period bills at the published Basic Care rate. **Final invoice; nothing after it.** |
+| `INV-VNK-2026-006` Furbabies R1 000 | ❌ **SUPERSEDED** by `-007` — see below. |
+| `INV-VNK-2026-007` Furbabies **R600** | ✅ Issued 21 Aug 2026. Two unbilled months (16 Jun–15 Jul, 16 Jul–15 Aug) at **R300** each. |
 
-**Next free number: `-007`** (first Nourkrin care invoice, due 3 October 2026 at
-R1 900). ⚠️ `-005` and `-006` are both used.
+### 🤝 SETTLED 20 Aug 2026 — Donovan keeps both sites
+
+He did **not** cancel Furbabies after all. Final position, agreed on WhatsApp:
+
+| | Settled at |
+|---|---|
+| Nourkrin care | **R1 900/mo**, 3 months free, first payment **3 Oct 2026** |
+| Furbabies care | **R300/mo** — ongoing, NOT cancelled |
+| Two unbilled Furbabies months | **R600** total (R300 each, not R500) |
+| Out-of-package work | **R280/hour**, flagged in advance |
+
+**Two concessions made on 20 Aug**, both stated on the invoice rather than
+absorbed silently: the backdated months dropped from R500 to R300 each (−R400),
+and the ongoing rate stays at R300 instead of moving to the published R500
+(−R200/month).
+
+📌 **The R300 is a reduced rate and the invoice says so.** If that is not
+restated at each renewal it will quietly become the assumed baseline, which is
+how the R300 became contentious in the first place.
+
+**Next free number: `-008`** (first Nourkrin care invoice, due 3 October 2026 at
+R1 900). ⚠️ `-005`, `-006` and `-007` are all used.
 
 Service terms covering all of this were issued to Donovan on 19 Aug 2026 and are
 committed at `nourkrin-sa/legal/service-terms-FOR-DONOVAN.pdf`, generator
