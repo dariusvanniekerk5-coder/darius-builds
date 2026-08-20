@@ -492,6 +492,55 @@ this file already warns about: _"never invent a per-client monthly number. Put
 the client on a published tier."_ 📌 **At renewal, move Nourkrin to Partner Care
 at R2,450** — the price now has public backing and needs no argument.
 
+### 💸 PAYMENT PATTERN — Donovan / Nourkrin (documented 20 Aug 2026)
+
+Recorded because it is a real, evidenced pattern that should inform how work is
+quoted and sequenced for this client. **This is a record of what happened, not
+a judgement about intent — the record cannot settle motive and should not try.**
+
+| Date | What happened |
+|---|---|
+| 8 Jul 2026 | Wanted the site done _"100%"_ before paying the outstanding website balance |
+| 13 Jul 2026 | A **firm deadline (15 July)** had to be written into the agreement to move it |
+| 13 Jul 2026 | A **R4,000 prompt-payment discount** was offered as an incentive to pay |
+| 18 Aug 2026 | Agreed to pay both care invoices "the same day" — not paid |
+| 19 Aug 2026 | Asked directly; answer was _"is besig… sal later daar na kyk"_ |
+| 20 Aug 2026 | Settled at R600 + R300/mo after a long exchange |
+
+**Every payment so far has required a deadline, a discount, or a chase.**
+
+⚖️ **The counterweight, recorded for balance:**
+- He offered a review and referrals **unprompted** (7 Aug) and **declined the
+  referral fee**.
+- He **paid before completion once** — raised by him on 20 Aug, and accepted by
+  Darius as true and a genuine favour in the other direction.
+- He has now committed to **R1,900/month ongoing** on Nourkrin, at Darius's
+  number.
+- He is actively **presenting VNK's work to Nourkrin International**.
+
+Slow, hard-negotiating payment behaviour is common in cash-constrained small
+businesses and is not evidence of bad faith. Both things are true at once: the
+friction is real, and so is the goodwill.
+
+### 📌 THE RULE THIS PRODUCES — speculative work
+
+Darius did substantial unpaid work (the Nourkrin International pitch deck and
+screenshots) during a period when partnership and multi-country work were being
+floated by the client in hedged terms.
+
+**That was a bet, not a favour — and bets should be chosen and counted, never
+drifted into.**
+
+🔑 **The test before any unpaid or speculative work, for any client:**
+
+> **"Would I do this work if the opportunity never materialised?"**
+> If yes — do it, and count it as marketing spend.
+> If no — quote it.
+
+Corollary: **a client mentioning a partnership, a referral, or future work is
+not payment and is not a commitment.** Nothing in this relationship's record has
+ever converted a verbal prospect into money. Price the work in front of you.
+
 ### 🔴 Client entity details, for future invoices
 
 Recorded elsewhere in the nourkrin-sa repo and worth having here:
