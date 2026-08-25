@@ -260,6 +260,129 @@ quote lands, build in `index.html`:
   **dariusvanniekerk@icloud.com**. (Note: Donovan has the email saved
   wrongly as `icould.com` — worth correcting with him.)
 
+## 🔴 3 MONTHS FREE CARE WAS PROMISED — found 19 Aug 2026, INV-003 IS DISPUTED
+
+_Date verified externally: Wed 19 Aug 2026 (`Date:` header, google.com)._
+
+**Donovan asked on the morning of 19 Aug 2026, as he was about to pay:**
+_"Hi ek gaan die betaaling nou doen, maar ek onthou jy het gese ek kry 3 maande
+se gratis sorg?"_
+
+**He is right.** Checked and confirmed in `nourkrin-sa/PROJECT-STATUS.md`
+lines 3470–3475, recorded from the **13 July 2026** phase-2 negotiation:
+
+> **NEW concessions Darius offered verbally on the call, to close the deal:**
+> - App Store + Google Play submission included once, at no extra charge
+> - **3 months of Partner Care (hosting/support) free after launch** as a launch
+>   gift (**normally R2,450/mo**, so ~R7,350 of value). One-time only, not
+>   standing — the breakdown PDF explicitly labels both as a "one-time launch
+>   gesture, not a standing offer on future work"
+
+⚠️ **Donovan is not going on memory either** — the record states this was written
+into `VNK-Nourkrin-Phase2-Breakdown.pdf`, which was sent to him. He has it in
+writing.
+
+### 🔴 Why this was missed — fix the cause, not just the symptom
+
+**The commitment was never carried from `PROJECT-STATUS.md` into this file's
+billing section.** When the care plans were set up on 18 Aug, the billing cycle
+was written from the rate discussion alone, and a promise made on a call in July
+— recorded in the *other* repo — was invisible. `INV-VNK-2026-003` was therefore
+issued for **25 Aug – 24 Sep 2026**, squarely inside a period already given away.
+
+📌 **Rule going forward: before issuing ANY invoice to a client, grep both repos
+for concessions, free periods and discounts promised to that client.** A rate is
+not a price until the concessions are subtracted from it.
+
+### 🔴 THE ACTUAL QUOTE WAS R1,900/mo — found 19 Aug 2026 from the original WhatsApp
+
+**Everything below this heading was superseded within hours of being written.**
+Darius found his own original WhatsApp to Donovan (July 2026, sent 10:08) and it
+states the care terms in his own words:
+
+> _"Om die website aan die gang te hou deur dit daagliks te monitor en seker maak
+> als is ok en dat daar nie enige bugs en goed is wat jou website en App kan
+> opneuk vra ek so om en by **R1900pm** maar ek sal **3 maande gratis** doen om
+> ook dankie te sê dat ek jou website as n voorbeeld gebruik vir toekomstige
+> werk."_
+
+**What this settles:**
+
+| Item | Truth |
+|---|---|
+| Care rate quoted to Donovan | **R1,900/mo** — in writing |
+| 3 months free | ✅ **Confirmed in Darius's own words.** Not disputable. |
+| Why it was given | In exchange for **using the site as a portfolio example** — Donovan gave consideration for it |
+| Value of the gift | **3 × R1,900 = R5,700** — NOT the ~R7,350 recorded below |
+
+⚠️ **`INV-VNK-2026-003` was issued at R2,000 — R100/month ABOVE the written
+quote.** The R2,450 "normal rate" mentioned to Donovan on 19 Aug is his standard
+Partner Care tier, but it is **not what this client was quoted**, and the client
+keeps and re-reads his messages.
+
+📌 **Recommended position: honour R1,900.** It is what was written, the gap to
+the invoice is R100/mo, and the credibility cost of arguing exceeds the money.
+The scope has genuinely outgrown R1,900 — live Paystack orders and
+subscriptions, D1, R2 photo storage, practitioner gating, PWA, Play Store — but
+that is a **renewal conversation**, raised forward, never retroactively.
+
+⚠️ **Also promised in that same message, and not yet verified as delivered:**
+business cards, A6 flyers and thank-you cards, stated as included in the
+R16,000. The repo only ever records these as *mockups*.
+
+### (Superseded) The rate as previously recorded — R2,450, not R2,000
+
+| Figure | What it actually is |
+|---|---|
+| **R2,450/mo** | The **Partner Care** tier rate. This is what the free months were promised against, so the gift is worth **~R7,350**. |
+| R2,000/mo | Recorded in `VNK-Clients\CLIENTS-STATUS.md` (⚠️ **not in these repos**, cannot be verified from a session) as "the deal already discussed". Flagged 11 Aug — a month *after* the offer. This is what INV-003 was issued at. |
+| ~R2,000/month | ⚠️ **TRAP.** `PROJECT-STATUS.md:3482` uses this figure in the same 13 July section, but it is **hosting cost** justifying the separate R16,000 app-store price. **It is not a care quote.** Easy to misread. |
+
+### Where it stands — Donovan was given a choice, 19 Aug 2026
+
+Darius replied acknowledging the promise may well have been made, noted that
+R2,450 had already been discounted to R2,000 and Furbabies R500 to R300 as
+favours, and offered a straight trade:
+
+| | **Option A** — invoices as issued | **Option B** — free months honoured |
+|---|---|---|
+| Nourkrin | R2,000/mo from 25 Aug | **R0 until 3 Oct 2026**, then **R2,450/mo** |
+| Furbabies | R300/mo | **R500/mo** |
+| Payable on 19 Aug | R2,300 | **R500** |
+| First 12 months | ~R27,600 | **~R32,200** |
+| Each year after | R27,600 | **R35,400** |
+
+**Option B is better for VNK** — roughly **+R4,600** in year one and **+R7,800
+a year** thereafter — because it trades a one-off three-month gift for the
+published rates permanently. It also lands at **R2,450 + R500 = R2,950/mo**,
+which is exactly this file's own internal valuation of the work, reached without
+opening a renegotiation.
+
+⏳ **AWAITING DONOVAN'S ANSWER as at 19 Aug 2026.**
+
+### What to do when he answers
+
+- **If he picks B:** cancel/credit `INV-VNK-2026-003`. Re-issue Furbabies at
+  **R500/mo**, and ⚠️ **state explicitly that R500 starts now and is NOT
+  backdated** — the reply mentioned Furbabies being live since June, and leaving
+  that ambiguous invites a second argument over ~R1,500 that is not worth having.
+  First Nourkrin invoice: **3 October 2026 at R2,450**.
+- **If he picks A:** the free months are extinguished by agreement. **Record that
+  explicitly here**, in his own words if possible, or it will resurface.
+- **Either way:** write the outcome into this file the same day, and into
+  `CLIENTS-STATUS.md`, so the two stop disagreeing.
+
+### ⚠️ Unverified in this record
+
+- **Furbabies' launch date.** Darius told Donovan it has been live since **June
+  2026**. That is from his own knowledge and is *consistent* with the evidence —
+  the earliest hard record is a note dated **2 Jul 2026** describing the live
+  site — but **no launch date is recorded anywhere in either repo**, and the
+  Furbabies repo has never been in session scope.
+- **The 3 free months are recorded against Nourkrin Partner Care only.** Nothing
+  connects them to Furbabies. Donovan's message did not name a site, so he may
+  believe otherwise. It is R300 — if he pushes, concede it rather than argue.
+
 ## 🧾 CARE-PLAN BILLING CYCLE — LIVE, first invoices sent 18 Aug 2026
 
 **Both care plans are now invoiced and running.** Sent to Donovan on
@@ -270,8 +393,56 @@ quote lands, build in `index.html`:
 | `INV-VNK-2026-003` | Nourkrin SA — nourkrinsa.co.za | **R2 000.00 / month** | 25 Aug – 24 Sep 2026 |
 | `INV-VNK-2026-004` | Furbabies | **R300.00 / month** | 25 Aug – 24 Sep 2026 |
 
+### 🔄 UPDATED 19 Aug 2026 — Furbabies reissued at R500, Nourkrin cancelled
+
+| Invoice | Status |
+|---|---|
+| `INV-VNK-2026-003` Nourkrin R2 000 | ❌ **CANCELLED.** 3 free months honoured — nothing payable until 3 Oct 2026, then **R1 900/mo** (the rate actually quoted). |
+| `INV-VNK-2026-004` Furbabies R300 | ❌ **REPLACED** by `-006`. |
+| `INV-VNK-2026-006` Furbabies R1 000 | ❌ **SUPERSEDED** by `-007` — see below. |
+| `INV-VNK-2026-007` Furbabies **R600** | ✅ Issued 21 Aug 2026. Two unbilled months (16 Jun–15 Jul, 16 Jul–15 Aug) at **R300** each. |
+
+### 🤝 SETTLED 20 Aug 2026 — Donovan keeps both sites
+
+He did **not** cancel Furbabies after all. Final position, agreed on WhatsApp:
+
+| | Settled at |
+|---|---|
+| Nourkrin care | **R1 900/mo**, 3 months free, first payment **3 Oct 2026** |
+| Furbabies care | **R300/mo** — ongoing, NOT cancelled |
+| Two unbilled Furbabies months | **R600** total (R300 each, not R500) |
+| Out-of-package work | **R280/hour**, flagged in advance |
+
+**Two concessions made on 20 Aug**, both stated on the invoice rather than
+absorbed silently: the backdated months dropped from R500 to R300 each (−R400),
+and the ongoing rate stays at R300 instead of moving to the published R500
+(−R200/month).
+
+📌 **The R300 is a reduced rate and the invoice says so.** If that is not
+restated at each renewal it will quietly become the assumed baseline, which is
+how the R300 became contentious in the first place.
+
+**Next free number: `-008`** (first Nourkrin care invoice, due 3 October 2026 at
+R1 900). ⚠️ `-005`, `-006` and `-007` are all used.
+
+Service terms covering all of this were issued to Donovan on 19 Aug 2026 and are
+committed at `nourkrin-sa/legal/service-terms-FOR-DONOVAN.pdf`, generator
+included — deliberately, so it cannot vanish the way the July breakdown did.
+
 Numbering continues the July series (`-001` website build, `-002` app build).
-**Next: `-005` and `-006`.**
+
+🔴 **CORRECTED 18 Aug 2026 — this previously said "Next: `-005` and `-006`".
+That is now wrong.** `INV-VNK-2026-005` was issued the same day for the
+**R20,500 already paid** by Donovan (signed agreement 14 July 2026; R10,000 app
++ R6,000 Zoom/webinars + R1,500 chatbot + R3,000 app store). Marked PAID IN
+FULL, amount due R0.00, no banking details.
+
+**Next care-plan invoices are therefore `-006` and `-007`**, issued
+📅 **Friday 18 September 2026**. Do not reuse `-005`.
+
+⚠️ The generated PDFs for `-003`, `-004` and `-005` lived only in the session
+scratchpad and are **gone with the container**. They were sent to Darius
+directly. Regenerate if needed — banking details stay out of the repo.
 
 ### The cycle, as agreed in writing on the invoices
 
@@ -309,6 +480,87 @@ agreed. The warning further down this file still stands: do not let a bespoke
 sub-floor monthly figure become the reference price for future one-pagers. The
 annual-upfront route (R2 940/yr) is the way to discount without publishing a
 low monthly rate — **worth revisiting at renewal.**
+
+### 📋 What the live site promises with EVERY care plan (verified 19 Aug 2026)
+
+From `vnkdigital.co.za`, the "Every care plan includes" panel — these are
+published commitments on every tier, including Furbabies' R500 Basic Care:
+
+- Regular backups, with tested restores
+- Software, plugin & security updates
+- **Domain-renewal management**
+- Content updates & small changes
+- Contact form & broken-link checks
+- Speed & performance checks
+- **A monthly report on what we did**
+
+⚠️ **The monthly report is the one to check.** It is published as included on
+every plan. If reports are not actually being sent, that is a promise on the
+live site that is not being kept, and a client could reasonably point at it.
+Either start sending a short monthly note, or take the line off the site.
+
+### 🎯 Where each client should sit against the published tiers
+
+| Client | Charged | Published tier | Match? |
+|---|---|---|---|
+| Furbabies | **R500/mo** | Basic Care R500 | ✅ **Exact.** Backed by the public rate card. |
+| Nourkrin | **R1,900/mo** | *(between Growth R1,500 and Partner R2,450)* | ⚠️ **No tier.** |
+
+**Nourkrin belongs on Partner Care.** The site itself says that tier is for
+web-app and e-commerce clients, which is precisely what Nourkrin is. R1,900 was
+quoted in writing in July and must be honoured, but it repeats the exact mistake
+this file already warns about: _"never invent a per-client monthly number. Put
+the client on a published tier."_ 📌 **At renewal, move Nourkrin to Partner Care
+at R2,450** — the price now has public backing and needs no argument.
+
+### 💸 PAYMENT PATTERN — Donovan / Nourkrin (documented 20 Aug 2026)
+
+Recorded because it is a real, evidenced pattern that should inform how work is
+quoted and sequenced for this client. **This is a record of what happened, not
+a judgement about intent — the record cannot settle motive and should not try.**
+
+| Date | What happened |
+|---|---|
+| 8 Jul 2026 | Wanted the site done _"100%"_ before paying the outstanding website balance |
+| 13 Jul 2026 | A **firm deadline (15 July)** had to be written into the agreement to move it |
+| 13 Jul 2026 | A **R4,000 prompt-payment discount** was offered as an incentive to pay |
+| 18 Aug 2026 | Agreed to pay both care invoices "the same day" — not paid |
+| 19 Aug 2026 | Asked directly; answer was _"is besig… sal later daar na kyk"_ |
+| 20 Aug 2026 | Settled at R600 + R300/mo after a long exchange |
+
+**Every payment so far has required a deadline, a discount, or a chase.**
+
+⚖️ **The counterweight, recorded for balance:**
+- He offered a review and referrals **unprompted** (7 Aug) and **declined the
+  referral fee**.
+- He **paid before completion once** — raised by him on 20 Aug, and accepted by
+  Darius as true and a genuine favour in the other direction.
+- He has now committed to **R1,900/month ongoing** on Nourkrin, at Darius's
+  number.
+- He is actively **presenting VNK's work to Nourkrin International**.
+
+Slow, hard-negotiating payment behaviour is common in cash-constrained small
+businesses and is not evidence of bad faith. Both things are true at once: the
+friction is real, and so is the goodwill.
+
+### 📌 THE RULE THIS PRODUCES — speculative work
+
+Darius did substantial unpaid work (the Nourkrin International pitch deck and
+screenshots) during a period when partnership and multi-country work were being
+floated by the client in hedged terms.
+
+**That was a bet, not a favour — and bets should be chosen and counted, never
+drifted into.**
+
+🔑 **The test before any unpaid or speculative work, for any client:**
+
+> **"Would I do this work if the opportunity never materialised?"**
+> If yes — do it, and count it as marketing spend.
+> If no — quote it.
+
+Corollary: **a client mentioning a partnership, a referral, or future work is
+not payment and is not a commitment.** Nothing in this relationship's record has
+ever converted a verbal prospect into money. Price the work in front of you.
 
 ### 🔴 Client entity details, for future invoices
 
@@ -392,9 +644,15 @@ selection, forgot password, health-claims research. Nowhere near 1 hour.
 - **Partner Care — R2,450/mo**: Standard Care + **4 hrs dev/month**,
   priority queue, quarterly improvements. `BUSINESS-PLAN.md` created this
   tier specifically for _"the tier web-app and e-commerce clients should
-  land on"_. Nourkrin is its first customer. ⚠️ **It is not on the live
-  site yet — add it to vnkdigital.co.za so the price has public backing
-  before quoting it.**
+  land on"_. Nourkrin is its first customer.
+
+  ✅ **CORRECTED 19 Aug 2026 — it IS on the live site.** This previously said
+  "not on the live site yet, add it to vnkdigital.co.za". **That is out of
+  date.** Verified from a browser screenshot of `vnkdigital.co.za`: all four
+  tiers are published — **Basic from R500/mo, Standard from R800/mo, Growth
+  from R1,500/mo, Partner from R2,450/mo** — with Partner Care described on the
+  site as _"The right fit for web-app and e-commerce clients."_ The price has
+  public backing already.
 - **App Store Care — R450/mo**, starting only once the Android app is
   actually live. This is real recurring work nobody has priced: the
   annual target-API bump (there's a 31 Aug deadline every year), Play

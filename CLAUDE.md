@@ -36,6 +36,33 @@ cheaper than being wrong.**
    invoice line, a client message, a legal document, a price — check the
    live state first. Every time.
 
+## 🔴 THE CLIENT-FACING COROLLARY (added 18 Aug 2026 — read with Rule Zero)
+
+Rule Zero covers wrong *facts*. This covers **incomplete instructions**, which
+fail differently and reached a client on 18 Aug 2026 in the nourkrin-sa work:
+
+Claude drafted a WhatsApp telling the client *"I don't need the whole document
+now, just Schedule A1 at the back"* — taken from a repo note saying Schedule A1
+was the blocker. **The 8-page PDF was never opened.** It turned out Schedule A1
+is pages 6–7, while the company registration details are on pages 1–2, the
+clause 6 initials on page 4, and the Product and Authorisation Statement — the
+page an app store actually asks for — on page 8. The client would have signed
+precisely what he was told to and returned almost nothing that was needed, and
+the consequence would have landed on Darius.
+
+**Darius caught it from memory, by luck.** His memory is the exact thing he has
+said cannot be relied on.
+
+- **Before instructing anyone to complete a document, form or dashboard, open
+  it and read ALL of it.** Notes record intent; they omit what the artefact
+  actually asks for.
+- **An under-ask is worse than no ask** — you get one clean run at "please
+  complete this and send it back", and a partial instruction burns it.
+- **Count what you are asking for against the artefact before sending**: pages,
+  fields, signature blocks, attachments.
+- Applies to **every outbound message** — WhatsApp, email, invoices, quotes,
+  handovers — not just statements of fact.
+
 ## The test before you send an answer
 
 **"Which of these did I actually check, and how?"** Anything you cannot
