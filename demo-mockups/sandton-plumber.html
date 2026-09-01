@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RapidFlow Plumbing | 24/7 Emergency Plumbers in Sandton</title>
+<style>
+  :root{
+    --navy:#0b2545;--blue:#1d6fb8;--accent:#13b5a6;--ink:#13243a;
+    --muted:#5b6b80;--bg:#f4f7fb;--white:#fff;--amber:#ffb020;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  a{text-decoration:none;color:inherit}
+
+  /* Top bar */
+  .topbar{background:var(--navy);color:#cfe0f2;font-size:.85rem}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:42px;flex-wrap:wrap}
+  .topbar strong{color:#fff}
+
+  /* Header */
+  header{background:var(--white);position:sticky;top:0;z-index:40;box-shadow:0 2px 14px rgba(11,37,69,.08)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.35rem;color:var(--navy)}
+  .logo .drop{width:34px;height:34px;background:linear-gradient(135deg,var(--blue),var(--accent));border-radius:50% 50% 50% 0;transform:rotate(45deg)}
+  nav a{margin:0 14px;font-weight:600;color:var(--ink);font-size:.95rem}
+  nav a:hover{color:var(--blue)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 22px;border-radius:8px;font-weight:700;transition:.2s;border:none;cursor:pointer}
+  .btn:hover{background:#0e9f92;transform:translateY(-1px)}
+  .btn-amber{background:var(--amber);color:#3a2a00}
+  .btn-amber:hover{background:#ec9e0c}
+  .nav-cta{display:flex;align-items:center;gap:10px}
+  @media(max-width:860px){nav{display:none}}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#123a66 60%,var(--blue) 100%);color:#fff;padding:70px 0 80px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:radial-gradient(circle,rgba(19,181,166,.35),transparent 70%)}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+  .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:30px;font-size:.82rem;font-weight:600;margin-bottom:18px}
+  .hero h1{font-size:2.9rem;line-height:1.12;font-weight:800;margin-bottom:16px}
+  .hero h1 span{color:var(--amber)}
+  .hero p.lead{font-size:1.15rem;color:#d6e6f6;margin-bottom:26px;max-width:520px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+  .hero-cta .btn{padding:15px 28px;font-size:1.05rem}
+  .trust-row{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem;color:#cfe0f2}
+  .trust-row b{color:#fff}
+  /* Quote card */
+  .quote-card{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 50px rgba(0,0,0,.28)}
+  .quote-card h3{font-size:1.25rem;color:var(--navy);margin-bottom:4px}
+  .quote-card p.sub{color:var(--muted);font-size:.9rem;margin-bottom:18px}
+  .quote-card input,.quote-card select{width:100%;padding:12px 14px;margin-bottom:12px;border:1.5px solid #dde6f0;border-radius:8px;font-size:.95rem;font-family:inherit}
+  .quote-card input:focus,.quote-card select:focus{outline:none;border-color:var(--blue)}
+  .quote-card .btn{width:100%;padding:14px}
+  .quote-card .fineprint{text-align:center;font-size:.78rem;color:var(--muted);margin-top:10px}
+  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero h1{font-size:2.2rem}}
+
+  /* Trust badges strip */
+  .strip{background:#fff;padding:22px 0;border-bottom:1px solid #e7eef6}
+  .strip .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:18px;text-align:center}
+  .strip .item{font-weight:700;color:var(--navy);font-size:.95rem}
+  .strip .item small{display:block;color:var(--muted);font-weight:500;font-size:.8rem}
+
+  /* Sections */
+  section.pad{padding:68px 0}
+  .eyebrow{text-align:center;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.82rem;margin-bottom:8px}
+  h2.title{text-align:center;font-size:2rem;color:var(--navy);margin-bottom:10px;font-weight:800}
+  p.intro{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 44px}
+
+  /* Services */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:860px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border-radius:14px;padding:28px;box-shadow:0 6px 22px rgba(11,37,69,.07);transition:.2s;border:1px solid #eef3f9}
+  .card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(11,37,69,.13)}
+  .card .ic{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--accent));display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:16px}
+  .card h3{color:var(--navy);font-size:1.15rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* Why us */
+  .why{background:var(--navy);color:#fff}
+  .why .grid{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:860px){.why .grid{grid-template-columns:1fr 1fr}}
+  .why .stat{text-align:center}
+  .why .stat .num{font-size:2.5rem;font-weight:800;color:var(--amber);line-height:1}
+  .why .stat .lbl{color:#cfe0f2;font-size:.92rem;margin-top:6px}
+
+  /* Reviews */
+  .review{background:#fff;border-radius:14px;padding:26px;box-shadow:0 6px 22px rgba(11,37,69,.07);border:1px solid #eef3f9}
+  .stars{color:var(--amber);font-size:1.1rem;margin-bottom:10px}
+  .review p{color:var(--ink);font-style:italic;margin-bottom:14px}
+  .review .who{font-weight:700;color:var(--navy);font-size:.92rem}
+  .review .who small{display:block;color:var(--muted);font-weight:500}
+
+  /* CTA band */
+  .ctaband{background:linear-gradient(135deg,var(--accent),var(--blue));color:#fff;text-align:center}
+  .ctaband h2{font-size:2rem;font-weight:800;margin-bottom:10px}
+  .ctaband p{font-size:1.1rem;margin-bottom:26px;opacity:.95}
+  .ctaband .btn{background:#fff;color:var(--navy);font-size:1.1rem;padding:16px 34px}
+  .ctaband .btn:hover{background:#f0f4f8}
+
+  /* Footer */
+  footer{background:#081a32;color:#9fb4cc;padding:46px 0 26px;font-size:.92rem}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;margin-bottom:30px}
+  @media(max-width:860px){footer .cols{grid-template-columns:1fr}}
+  footer h4{color:#fff;margin-bottom:12px;font-size:1rem}
+  footer .logo{color:#fff;margin-bottom:12px}
+  footer a:hover{color:#fff}
+  footer .bottom{border-top:1px solid #18324f;padding-top:18px;text-align:center;font-size:.82rem;color:#6f88a6}
+
+  /* Sticky mobile call/whatsapp */
+  .sticky-mobile{position:fixed;bottom:0;left:0;right:0;display:none;z-index:60;box-shadow:0 -3px 16px rgba(0,0,0,.18)}
+  .sticky-mobile a{flex:1;text-align:center;padding:15px 0;font-weight:800;color:#fff;font-size:1rem}
+  .sticky-mobile .call{background:var(--blue)}
+  .sticky-mobile .wa{background:#25d366}
+  @media(max-width:860px){.sticky-mobile{display:flex}body{padding-bottom:54px}}
+</style>
+</head>
+<body>
+
+  <div class="topbar"><div class="wrap">
+    <span>⭐ Rated 4.9/5 by 200+ Sandton homeowners</span>
+    <span><strong>Open now · 24/7 emergency call-outs</strong> · 📞 011 000 0000</span>
+  </div></div>
+
+  <header><div class="wrap">
+    <a class="logo"><span class="drop"></span>RapidFlow</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#quote">Get a Quote</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:0110000000" class="btn btn-amber">📞 Call Now</a>
+    </div>
+  </div></header>
+
+  <section class="hero"><div class="wrap">
+    <div>
+      <span class="badge">⚡ 30–60 min response across Sandton</span>
+      <h1>Burst pipe? Blocked drain? <span>We're there fast.</span></h1>
+      <p class="lead">Licensed, on-time plumbers serving Sandton, Bryanston, Morningside, Rivonia &amp; Fourways. Upfront pricing — no surprise call-out fees, ever.</p>
+      <div class="hero-cta">
+        <a href="tel:0110000000" class="btn btn-amber">📞 Call 011 000 0000</a>
+        <a href="https://wa.me/27000000000" class="btn">💬 WhatsApp Us</a>
+      </div>
+      <div class="trust-row">
+        <span>✔ <b>Fully licensed</b> &amp; insured</span>
+        <span>✔ <b>Upfront</b> quotes</span>
+        <span>✔ <b>12-month</b> workmanship guarantee</span>
+      </div>
+    </div>
+    <div class="quote-card" id="quote">
+      <h3>Get a free quote</h3>
+      <p class="sub">We'll WhatsApp you back within 15 minutes.</p>
+      <form onsubmit="return false">
+        <input type="text" placeholder="Your name" required>
+        <input type="tel" placeholder="Cellphone number" required>
+        <select required>
+          <option value="" disabled selected>What do you need?</option>
+          <option>Emergency — burst pipe / leak</option>
+          <option>Blocked drain / toilet</option>
+          <option>Geyser repair / replacement</option>
+          <option>Taps, mixers &amp; fittings</option>
+          <option>Other / not sure</option>
+        </select>
+        <button class="btn">Get My Free Quote →</button>
+      </form>
+      <p class="fineprint">🔒 No spam. We only use your number to quote.</p>
+    </div>
+  </div></section>
+
+  <div class="strip"><div class="wrap">
+    <div class="item">🕐 24/7<small>Always available</small></div>
+    <div class="item">💰 Upfront pricing<small>No hidden fees</small></div>
+    <div class="item">🛡️ 12-month guarantee<small>On all workmanship</small></div>
+    <div class="item">📍 Sandton-based<small>Fast local response</small></div>
+    <div class="item">✅ Licensed &amp; insured<small>PIRB registered</small></div>
+  </div></div>
+
+  <section class="pad" id="services"><div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 class="title">Plumbing services, done right the first time</h2>
+    <p class="intro">From a 2am burst pipe to a planned geyser swap — one trusted local team for everything.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🚿</div><h3>Leaks &amp; Burst Pipes</h3><p>Fast detection and repair before water damage spreads. Emergency response across Sandton.</p></div>
+      <div class="card"><div class="ic">🚽</div><h3>Blocked Drains</h3><p>High-pressure jetting and drain clearing for sinks, toilets and outside lines.</p></div>
+      <div class="card"><div class="ic">🔥</div><h3>Geyser Repair &amp; Install</h3><p>Repairs, replacements and element swaps — including insurance claim assistance.</p></div>
+      <div class="card"><div class="ic">🔧</div><h3>Taps &amp; Fittings</h3><p>Dripping taps, mixers, toilets and bathroom installs done cleanly and properly.</p></div>
+      <div class="card"><div class="ic">🏠</div><h3>Renovations</h3><p>Full bathroom and kitchen plumbing for renovations and new builds.</p></div>
+      <div class="card"><div class="ic">🔍</div><h3>Leak Detection</h3><p>Hidden-leak detection to find the source without tearing up your whole home.</p></div>
+    </div>
+  </div></section>
+
+  <section class="pad why" id="why"><div class="wrap">
+    <p class="eyebrow" style="color:var(--amber)">Why Sandton chooses us</p>
+    <h2 class="title" style="color:#fff">The plumber your neighbours already trust</h2>
+    <p class="intro" style="color:#cfe0f2">Family-run, locally based, and obsessed with showing up on time.</p>
+    <div class="grid">
+      <div class="stat"><div class="num">30min</div><div class="lbl">Average emergency response</div></div>
+      <div class="stat"><div class="num">4.9★</div><div class="lbl">From 200+ Google reviews</div></div>
+      <div class="stat"><div class="num">12yr</div><div class="lbl">Serving the Sandton area</div></div>
+      <div class="stat"><div class="num">100%</div><div class="lbl">Upfront, honest pricing</div></div>
+    </div>
+  </div></section>
+
+  <section class="pad" id="reviews"><div class="wrap">
+    <p class="eyebrow">Real reviews</p>
+    <h2 class="title">What homeowners say</h2>
+    <p class="intro">Genuine feedback from customers across the northern suburbs.</p>
+    <div class="grid">
+      <div class="review"><div class="stars">★★★★★</div><p>"Burst pipe at 11pm and they were here within 40 minutes. Fixed it fast and the price was exactly what they quoted. Lifesavers."</p><div class="who">Thandi M.<small>Morningside</small></div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>"Replaced our geyser and handled the insurance paperwork for us. Professional, tidy, and on time. Highly recommend."</p><div class="who">Johan v.<small>Bryanston</small></div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>"Finally a plumber that actually answers the phone and shows up when they say they will. Sorted our blocked drain in an hour."</p><div class="who">Priya N.<small>Rivonia</small></div></div>
+    </div>
+  </div></section>
+
+  <section class="pad ctaband"><div class="wrap">
+    <h2>Got a plumbing problem? Let's sort it today.</h2>
+    <p>Call now for a free quote — or WhatsApp us a photo of the issue.</p>
+    <a href="tel:0110000000" class="btn">📞 011 000 0000</a>
+  </div></section>
+
+  <footer><div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo"><span class="drop" style="display:inline-block;width:26px;height:26px;background:linear-gradient(135deg,var(--blue),var(--accent));border-radius:50% 50% 50% 0;transform:rotate(45deg);margin-right:8px"></span>RapidFlow Plumbing</a>
+        <p>Licensed, insured and PIRB-registered plumbers serving Sandton and the northern suburbs of Johannesburg. 24/7 emergency call-outs, every day of the year.</p>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <p>Sandton · Bryanston<br>Morningside · Rivonia<br>Fourways · Sunninghill</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 011 000 0000<br>💬 WhatsApp 24/7<br>✉️ hello@rapidflow.co.za</p>
+      </div>
+    </div>
+    <div class="bottom">© 2026 RapidFlow Plumbing · Sandton, Johannesburg · This is a demo mockup created by [Your Name]</div>
+  </div></footer>
+
+  <div class="sticky-mobile">
+    <a href="tel:0110000000" class="call">📞 Call Now</a>
+    <a href="https://wa.me/27000000000" class="wa">💬 WhatsApp</a>
+  </div>
+
+</body>
+</html>
