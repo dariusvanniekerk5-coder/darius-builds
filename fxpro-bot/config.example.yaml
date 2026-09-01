@@ -1,0 +1,63 @@
+# Copy to `config.yaml` and tune. All values here are conservative demo defaults.
+
+# --- Instrument & timing ---
+symbol: "EURUSD"          # the instrument to trade
+timeframe: "M15"          # bar timeframe: M1, M5, M15, M30, H1, H4, D1
+trend_timeframe: "H1"     # higher timeframe used for the trend filter
+poll_seconds: 15          # how often the loop wakes to check for a new closed bar
+warmup_bars: 300          # bars of history pulled for indicator calculation
+
+# --- Strategy (EMA crossover + higher-timeframe trend filter) ---
+strategy:
+  ema_fast: 12
+  ema_slow: 26
+  trend_ema: 50           # EMA on the trend timeframe; only go long above, short below
+  atr_period: 14
+  atr_stop_mult: 2.0      # stop-loss distance = atr_stop_mult * ATR
+  atr_target_mult: 3.0    # take-profit distance = atr_target_mult * ATR (R:R = 1.5)
+
+# --- Risk controls (the part that keeps us alive) ---
+risk:
+  risk_per_trade_pct: 0.5     # % of equity risked per trade, sized from stop distance
+  max_open_positions: 1       # total simultaneous positions
+  one_position_per_symbol: true
+  daily_max_loss_pct: 2.0     # halt NEW trades for the day if equity drops this % from day-start
+  min_lot: 0.01               # broker minimum; sizing is clamped to lot step
+  max_lot: 1.0                # hard cap regardless of what sizing suggests
+
+# --- Journal ---
+journal:
+  db_path: "journal.sqlite"
+  csv_path: "trades.csv"
+
+# --- Backtest (only used by `python -m src.backtest`) ---
+backtest:
+  initial_balance: 10000      # starting equity for the simulation
+  # Currency conversion for P/L. Defaults suit EURUSD: one 0.00001 move is ~$1
+  # per 1.0 lot. Adjust per instrument (see MT5 symbol_info tick_size/tick_value).
+  tick_size: 0.00001
+  tick_value: 1.0
+  spread: 0.00010             # ~1 pip, charged once per round-trip trade
+  commission_per_lot: 0.0     # account currency per lot, round trip
+
+# --- News & sentiment layer (optional; off by default) ---
+# Honest note: news moves FX but does NOT reliably predict it. This layer is for
+# RISK (avoid trading into high-impact releases) and an experimental sentiment veto.
+# It can only ever turn a technical signal into "no trade" — it never invents trades.
+news:
+  enabled: false              # master switch for the whole layer
+
+  # Economic-calendar risk filter (the proven part)
+  event_filter_enabled: true
+  pre_minutes: 30             # block new trades this long BEFORE an event...
+  post_minutes: 30            # ...and this long after
+  impact_threshold: high      # low | medium | high
+
+  # Sentiment overlay (experimental)
+  sentiment_mode: gate        # off | gate (veto conflicting trades) | confirm (require agreement)
+  min_confidence: 0.6         # only act on sentiment at/above this confidence
+  sentiment_engine: claude    # claude | rule
+  model: claude-opus-4-8      # cheaper high-frequency option: claude-haiku-4-5
+  freshness_minutes: 180      # only consider headlines newer than this
+  cache_db: sentiment_cache.sqlite
+  feeds: []                   # optional RSS overrides; empty = sensible defaults

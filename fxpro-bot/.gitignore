@@ -1,0 +1,11 @@
+# Never commit credentials or live config
+.env
+config.yaml
+
+# Runtime artifacts
+*.sqlite
+trades.csv
+backtest_*.csv
+__pycache__/
+*.pyc
+.pytest_cache/
