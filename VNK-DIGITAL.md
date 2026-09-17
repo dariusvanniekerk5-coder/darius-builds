@@ -422,8 +422,27 @@ and the ongoing rate stays at R300 instead of moving to the published R500
 restated at each renewal it will quietly become the assumed baseline, which is
 how the R300 became contentious in the first place.
 
-**Next free number: `-008`** (first Nourkrin care invoice, due 3 October 2026 at
-R1 900). ⚠️ `-005`, `-006` and `-007` are all used.
+**Next free number: `-009`.** ⚠️ `-005` through `-008` are all used.
+
+🔴 **CORRECTED 17 Sep 2026.** This previously read *"Next free number: `-008`
+(first Nourkrin care invoice, due 3 October 2026 at R1 900)"*, which reserved a
+number against a client. **Numbers are sequential by issue date, not reserved
+per client**, and reading it as a reservation is what made a whole session
+believe a Nourkrin invoice was due on 18 September. It was not.
+
+| Invoice | Client | Amount | Period | Issued |
+|---|---|---|---|---|
+| `INV-VNK-2026-008` | **Furbabies** | **R300.00** | 25 Sep – 24 Oct 2026 | 18 Sep 2026 |
+| `INV-VNK-2026-009` | **Nourkrin** | **R1 900.00** | first care month | ~26 Sep, **due 3 Oct 2026** |
+
+⚠️ **Possible gap — check before the next Furbabies invoice.** `-004` was going
+to bill Furbabies for **25 Aug – 24 Sep 2026**. `-004` was replaced by `-006`,
+`-006` was superseded by `-007`, and **`-007` covered only the two BACKDATED
+months** (16 Jun–15 Jul, 16 Jul–15 Aug). On this record the 25 Aug – 24 Sep
+month was never billed. Darius chose on 17 Sep 2026 to invoice only 25 Sep –
+24 Oct for now, so **if that month was genuinely missed it is still
+outstanding.** Do not silently add it to a later invoice — a surprise backdated
+line is exactly what made the earlier Furbabies billing contentious.
 
 Service terms covering all of this were issued to Donovan on 19 Aug 2026 and are
 committed at `nourkrin-sa/legal/service-terms-FOR-DONOVAN.pdf`, generator
@@ -451,7 +470,20 @@ directly. Regenerate if needed — banking details stay out of the repo.
 - **Thereafter: due on the 25th of each month**, for the month beginning that
   day. So 25 Sep covers 25 Sep – 24 Oct, and so on.
 - **Issue date: the 18th of each month** — a week's notice before the money is
-  due. 📅 **Next issue date: Friday 18 September 2026.**
+  due.
+
+⚠️ **This section describes the CYCLE, not a live to-do list.** It previously
+ended with a dated "Next issue date" line, which went stale the moment the
+invoices it referred to were superseded, and a later session read that stale
+date as "a Nourkrin invoice is due tomorrow". **Do not write a specific next
+date here.** The live schedule is the invoice table above — that is the only
+place a dated commitment belongs.
+
+⚠️ **Nourkrin does not follow the 25th cycle for its first payment.** The
+20 Aug 2026 settlement fixed its first care payment at **3 October 2026** after
+the three free months. Whether it then moves onto the 25th cycle or keeps a
+3rd-of-the-month date **has never been agreed with Donovan** — settle it on the
+first invoice rather than assuming.
 
 ### What is on the invoices
 
