@@ -430,10 +430,16 @@ number against a client. **Numbers are sequential by issue date, not reserved
 per client**, and reading it as a reservation is what made a whole session
 believe a Nourkrin invoice was due on 18 September. It was not.
 
-| Invoice | Client | Amount | Period | Issued |
-|---|---|---|---|---|
-| `INV-VNK-2026-008` | **Furbabies** | **R300.00** | 25 Sep – 24 Oct 2026 | 18 Sep 2026 |
-| `INV-VNK-2026-009` | **Nourkrin** | **R1 900.00** | first care month | ~26 Sep, **due 3 Oct 2026** |
+| Invoice | Client | Amount | Period | Issued | State |
+|---|---|---|---|---|---|
+| `INV-VNK-2026-008` | **Furbabies** | **R300.00** | 25 Sep – 24 Oct 2026 | 18 Sep 2026 | ✅ PDF generated 17 Sep 2026, due 25 Sep |
+| `INV-VNK-2026-009` | **Nourkrin** | **R1 900.00** | first care month | ~26 Sep | ⏳ Not yet built, **due 3 Oct 2026** |
+
+**The generator is committed at `tools/make-invoice.py`** — deliberately, because
+the `-003`, `-004` and `-005` PDFs and the script that made them were all lost
+with a session container. 🔴 **It ships with `«PLACEHOLDER»` banking details.**
+Paste the real ones in, generate, and do not commit that edit. `INV-*.pdf` is in
+`.gitignore` so a finished invoice cannot be committed by accident.
 
 ⚠️ **Possible gap — check before the next Furbabies invoice.** `-004` was going
 to bill Furbabies for **25 Aug – 24 Sep 2026**. `-004` was replaced by `-006`,
